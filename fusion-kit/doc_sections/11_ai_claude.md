@@ -2,8 +2,8 @@
 
 This section shows how to put Claude Code to work on Fusion P2P and O2C data through Model Context Protocol (MCP) servers that you own. It builds on two local files:
 
-- `C:\New folder\mcp\mcp-servers\fusion-mcp\fusion_server.py`: a read-only stdio server on the `mcp` 2.2.0 `MCPServer` class with `httpx2`. It has three tools (`get_api_info`, `list_invoices`, `get_invoice`), a 50-row cap, a 60,000-character output cap, a field allowlist, typed and regex-checked filters, 429/503 back-off and a JSONL audit log written outside the working tree.
-- `C:\New folder\mcp\ORACLE_FUSION_SETUP.md`: integration user, roles, Basic-then-JWT authentication, `claude mcp add`, strict launch with `--strict-mcp-config`, user-level deny rules and the rollout stages.
+- `mcp-servers/fusion-mcp/fusion_server.py`: a read-only stdio server on the `mcp` 2.2.0 `MCPServer` class with `httpx2`. It has five tools (`connection_status`, `get_api_info`, `list_invoices`, `get_invoice`, `fusion_get`), a 50-row cap, a 60,000-character output cap, a field allowlist, typed and regex-checked filters, 429/503 back-off and a JSONL audit log.
+- `README.md`: integration user, roles, Basic-then-JWT authentication, setup scripts, and the security design.
 
 Setup steps are not repeated here. Everything below extends that design. REST resources are in section 6, bulk paths and scheduled processes in section 7, reporting in section 8, SQL in section 9, Oracle's own agents in section 10, and roles and SoD in section 12. Facts about Claude Code behaviour come from the Claude Code documentation pages listed at the end of the section. Field names inside `fields=` lists are the ones already used in section 6 or listed on the 26D operation page cited in the sources. Check every other attribute with `GET .../<resource>/describe` before you allowlist it.
 

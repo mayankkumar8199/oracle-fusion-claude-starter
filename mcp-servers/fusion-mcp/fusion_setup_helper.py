@@ -13,7 +13,7 @@ import sys
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PROJECT = os.path.dirname(os.path.dirname(HERE))            # C:\New folder\mcp
+PROJECT = os.path.dirname(os.path.dirname(HERE))            # repo root (two levels up)
 CONFIG = os.environ.get("FUSION_CONFIG", os.path.join(HERE, "fusion_config.json"))
 SERVICE = "oracle-fusion"
 VENV_PY = os.path.join(HERE, ".venv", "Scripts", "python.exe")
