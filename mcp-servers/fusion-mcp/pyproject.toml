@@ -1,0 +1,22 @@
+[project]
+name = "fusion-mcp"
+version = "1.0.0"
+description = "Read-only MCP server connecting Claude Code to Oracle Fusion Cloud (Financials, Procurement, Order Management)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx2>=2.15.1",
+    "keyring>=25.7.0",
+    "mcp[cli]>=2.2.0",
+]
+
+[project.scripts]
+fusion-mcp = "fusion_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+# Use the Windows certificate store (needed behind HTTPS-inspecting networks)
+system-certs = true

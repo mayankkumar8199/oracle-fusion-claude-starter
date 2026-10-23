@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment and credentials (NEVER commit these)
+.env
+fusion_config.json
+mcp-servers/fusion-mcp/fusion_config.json
+
+# MCP config (generated per-machine by setup script — has absolute paths)
+.mcp.json
+
+# Logs
+logs/
+mcp-servers/fusion-mcp/logs/
+
+# Office temporary files
+~$*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE (user-specific, not the shared .vscode/ config)
+.idea/
+*.swp
+*.swo
+
+# Shell server (not part of this project)
+mcp-servers/shellserrver/
+
+# Old setup guide (superseded by README.md)
+ORACLE_FUSION_SETUP.md
+
+# Binary docs (too large for git — regenerate with fusion-kit scripts)
+docs/*.docx
+docs/*.xlsx

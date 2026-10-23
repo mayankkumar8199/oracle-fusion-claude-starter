@@ -1,0 +1,26 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/node_modules": true,
+    "mcp-servers/shellserrver": true
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}/mcp-servers/fusion-mcp/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/mcp-servers/fusion-mcp"
+  ],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "files.associations": {
+    ".env": "dotenv",
+    ".env.example": "dotenv"
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/fusion-kit/catalog.json": true,
+    "**/fusion-kit/rest_catalog.json": true,
+    "**/fusion-kit/tables.jsonl": true
+  }
+}

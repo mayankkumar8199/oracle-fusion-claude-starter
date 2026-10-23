@@ -1,0 +1,1388 @@
+[
+{
+"area": "fin",
+"title": "Activating, Managing, and Monitoring Cloud Services\",\"html\":\"../../../../../en-us/iaas/Content/applications-manager/applications-services-home.htm\",\"category\":\"Get Started\",\"position\":1},{\"title\":\"Getting Started with Oracle AI for Fusion Applications\",\"html\":\"../../fusion-ai/\",\"category\":\"Get Started\",\"position\":2},{\"title\":\"Getting Started with Oracle Digital Assistant for Fusion Applications",
+"category": "Get Started\",\"pdf\":\"../../applications-common/26d/fagda/getting-started-with-oracle-digital-assistant-for-fusion-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/fagda/index.html",
+"desc": "Describes how to do general tasks, such as configure, access, set up, export, import, and upgrade digital assistant for your Oracle Fusion Cloud Applications."
+},
+{
+"area": "fin",
+"title": "Getting Started with Your Financials Implementation",
+"category": "Get Started\",\"pdf\":\"facsf/getting-started-with-your-financials-implementation.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/facsf/index.html",
+"desc": "Provides a high-level introduction to some best practices for implementing applications in Oracle Fusion Cloud Financials."
+},
+{
+"area": "fin",
+"title": "Creating and Administering Analytics and Reports for Financials",
+"category": "User\",\"pdf\":\"occar/creating-and-administering-analytics-and-reports-for-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/occar/index.html",
+"desc": "Provides advanced instruction on creating and configuring Oracle Financials Cloud analytics and reports."
+},
+{
+"area": "fin",
+"title": "Joint Venture Management Assistants",
+"category": "User\",\"pdf\":\"../fajvm/joint-venture-management-assistants.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fajvm/index.html",
+"desc": "Describes how to access and use Joint Venture Management assistants."
+},
+{
+"area": "fin",
+"title": "U.S. Federal Financials Assistants",
+"category": "User\",\"pdf\":\"../faffa/u-s-federal-financials-assistants.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../faffa/index.html",
+"desc": "Describes how to set up and use U.S. Federal Financials assistants."
+},
+{
+"area": "fin",
+"title": "Use virtual cards for supplier payments",
+"category": "User\",\"pdf\":\"../fauvc/use-virtual-cards-for-supplier-payments.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fauvc/index.html",
+"desc": "Describes tasks to create and process supplier payments using virtual cards as the payment method."
+},
+{
+"area": "fin",
+"title": "Using Analytics and Reports for Financials",
+"category": "User\",\"pdf\":\"ocuar/using-analytics-and-reports-for-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/ocuar/index.html",
+"desc": "Shows how to view analytics and highlights a few examples, including general ledger trial balance, subledger to general ledger reconciliation, accounts receivable and payables aging, and cash requirements."
+},
+{
+"area": "fin",
+"title": "Using Assets",
+"category": "User\",\"pdf\":\"faalm/using-assets.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faalm/index.html",
+"desc": "Describes user tasks for the asset lifecycle management process including asset management, fixed asset accounting tasks, and reporting."
+},
+{
+"area": "fin",
+"title": "Using Common Features",
+"category": "User\",\"pdf\":\"../../applications-common/26d/oacpr/using-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oacpr/index.html",
+"desc": "Provides help for end user features that are common across Oracle Fusion Cloud Applications."
+},
+{
+"area": "fin",
+"title": "Using EPM with Oracle Fusion Cloud Financials\",\"html\":\"../../../../applications/enterprise-performance-management/epm-fusion-financials/index.html\",\"category\":\"User\",\"position\":12},{\"title\":\"Using Expenses",
+"category": "User\",\"pdf\":\"fawde/using-expenses.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fawde/index.html",
+"desc": "Describes user tasks for expenses including expense report entry and approval, expense report audit, expense reimbursements, travel authorizations or cash advance requests, credit card payments, and trips."
+},
+{
+"area": "fin",
+"title": "Using Financials for Asia/Pacific",
+"category": "User\",\"pdf\":\"fauap/using-financials-for-asia-pacific.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fauap/index.html",
+"desc": "Describes the user tasks for Financials for Asia/Pacific."
+},
+{
+"area": "fin",
+"title": "Using Financials for EMEA",
+"category": "User\",\"pdf\":\"faugf/using-financials-for-emea.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faugf/index.html",
+"desc": "Describes the user tasks for Financials for EMEA."
+},
+{
+"area": "fin",
+"title": "Using Financials for the Americas",
+"category": "User\",\"pdf\":\"faufa/using-financials-for-the-americas.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faufa/index.html",
+"desc": "Describes the user and setup tasks for Financials for the Americas."
+},
+{
+"area": "fin",
+"title": "Using Financials for the Public Sector",
+"category": "User\",\"pdf\":\"faups/using-financials-for-the-public-sector.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faups/index.html",
+"desc": "Describes the user and setup tasks for Financials for the Public Sector."
+},
+{
+"area": "fin",
+"title": "Using General Ledger",
+"category": "User\",\"pdf\":\"faugl/using-general-ledger.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faugl/index.html",
+"desc": "Describes user tasks for general ledger from creating and maintaining ledgers, ledger currencies, budgets, and journal entries, to running financial reports."
+},
+{
+"area": "fin",
+"title": "Using Joint Venture Management",
+"category": "User\",\"pdf\":\"fajvu/using-joint-venture-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fajvu/index.html",
+"desc": "Describes the tasks for a managing partner of a single joint venture or thousands of joint ventures to manage the distribution of costs and revenue among joint venture partners."
+},
+{
+"area": "fin",
+"title": "Using Lease Accounting",
+"category": "User\",\"pdf\":\"faula/using-lease-accounting.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faula/index.html",
+"desc": "Describes user tasks for Lease Accounting, including creating leases, assets, payment terms, options, milestones, rights, obligations, and lease operations."
+},
+{
+"area": "fin",
+"title": "Using Oracle Transactional Business Intelligence\",\"html\":\"../../../../../pls/topic/lookup?ctx=fa-latest&id=otbibooks\",\"category\":\"User\",\"position\":21},{\"title\":\"Using Payables Invoice to Pay",
+"category": "User\",\"pdf\":\"fappp/using-payables-invoice-to-pay.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fappp/index.html",
+"desc": "Describes user tasks for payables invoice to pay from invoices and payments to accounts payable balances and banking."
+},
+{
+"area": "fin",
+"title": "Using Receivables Credit to Cash",
+"category": "User\",\"pdf\":\"faofc/using-receivables-credit-to-cash.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faofc/index.html",
+"desc": "Describes user tasks for Receivables credit to cash, including customer billing, customer payments, accounts receivable management, credit management, cash management, collections, and revenue management."
+},
+{
+"area": "fin",
+"title": "Using Revenue Management",
+"category": "User\",\"pdf\":\"fafrm/using-revenue-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fafrm/index.html",
+"desc": "Describes user tasks for the revenue management process, including identifying and creating customer contracts and performance obligations and the resulting accounting entries, and recognizing revenue over time or at a point in time."
+},
+{
+"area": "fin",
+"title": "Using Subledger Accounting",
+"category": "User\",\"pdf\":\"fausl/using-subledger-accounting.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fausl/index.html",
+"desc": "Describes user tasks for subledger accounting including managing subledgers, the Create Accounting process, subledger journal adjustments, and reporting."
+},
+{
+"area": "fin",
+"title": "Using Tax",
+"category": "User\",\"pdf\":\"fautx/using-tax.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fautx/index.html",
+"desc": "Describes user tasks for tax including transaction taxes, withholding taxes, external taxable transactions, and transaction tax reports."
+},
+{
+"area": "fin",
+"title": "Using U.S. Federal Financials",
+"category": "User\",\"pdf\":\"fauus/using-u-s-federal-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fauus/index.html",
+"desc": "Describes how to use U.S. Federal Financials."
+},
+{
+"area": "fin",
+"title": "Configure Embedded Banking Services",
+"category": "Implementation\",\"pdf\":\"../faiib/configure-embedded-banking-services.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../faiib/index.html",
+"desc": "Describes tasks to set up and configure embedded banking."
+},
+{
+"area": "fin",
+"title": "Detailed Adoption Guidance: Expenses Agent",
+"category": "Implementation\",\"pdf\":\"../faeac/detailed-adoption-guidance-expenses-agent.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../faeac/index.html",
+"desc": "Describes tasks to configure the Expenses Agent."
+},
+{
+"area": "fin",
+"title": "Detailed Adoption Guidance: Payables Agent",
+"category": "Implementation\",\"pdf\":\"../fafpa/detailed-adoption-guidance-payables-agent.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fafpa/index.html",
+"desc": "Describes tasks to configure the Payables Agent."
+},
+{
+"area": "fin",
+"title": "Detailed Adoption Guidance: Payments Agent",
+"category": "Implementation\",\"pdf\":\"../fappa/detailed-adoption-guidance-payments-agent.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fappa/index.html",
+"desc": "Describes tasks to configure the Payments Agent."
+},
+{
+"area": "fin",
+"title": "Embedded Banking Questions and Answers",
+"category": "Implementation\",\"pdf\":\"../fabqa/embedded-banking-questions-and-answers.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fabqa/index.html",
+"desc": "Describes tasks to set up Embedded Banking in a short answer format."
+},
+{
+"area": "fin",
+"title": "Enable Bank Account Validation Service for J.P. Morgan",
+"category": "Implementation\",\"pdf\":\"../fajpm/enable-bank-account-validation-service-for-j-p-morgan.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fajpm/index.html",
+"desc": "Describes tasks to enable bank account validation service for J.P. Morgan."
+},
+{
+"area": "fin",
+"title": "File-Based Data Import (FBDI) for Financials",
+"category": "Implementation",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oefbf/index.html",
+"desc": "Describes file-based data imports to import or update legacy and other data into Oracle Financials Cloud from external applications."
+},
+{
+"area": "fin",
+"title": "Financials Questions and Answers",
+"category": "Implementation\",\"pdf\":\"../fafaq/financials-questions-and-answers.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fafaq/index.html",
+"desc": "Describes tasks to set up Financials in a short answer format."
+},
+{
+"area": "fin",
+"title": "Implementing Accounting Hub",
+"category": "Implementation\",\"pdf\":\"faiac/implementing-accounting-hub.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faiac/index.html",
+"desc": "Describes tasks to configure and set up Oracle Fusion Accounting Hub."
+},
+{
+"area": "fin",
+"title": "Implementing Accounting Hub Reporting",
+"category": "Implementation\",\"pdf\":\"faiah/implementing-accounting-hub-reporting.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faiah/index.html",
+"desc": "Describes tasks to configure and set up Oracle Fusion Accounting Hub Reporting Cloud."
+},
+{
+"area": "fin",
+"title": "Implementing and Using Journeys",
+"category": "Implementation\",\"pdf\":\"../../human-resources/faijh/implementing-and-using-journeys.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../human-resources/faijh/index.html",
+"desc": "Describes tasks to configure, set up, and use Journeys."
+},
+{
+"area": "fin",
+"title": "Implementing Assets",
+"category": "Implementation\",\"pdf\":\"faias/implementing-assets.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faias/index.html",
+"desc": "Describes tasks to configure and set up Assets."
+},
+{
+"area": "fin",
+"title": "Implementing Common Features for Financials and Project Management",
+"category": "Implementation\",\"pdf\":\"fafcf/implementing-common-features-for-financials-and-project-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fafcf/index.html",
+"desc": "Describes tasks to configure and set up features that are common across Oracle Fusion Cloud ERP."
+},
+{
+"area": "fin",
+"title": "Implementing Enterprise Structures and General Ledger",
+"category": "Implementation\",\"pdf\":\"faigl/implementing-enterprise-structures-and-general-ledger.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faigl/index.html",
+"desc": "Describes tasks to configure and set up Enterprise Structures and General Ledger."
+},
+{
+"area": "fin",
+"title": "Implementing Expenses",
+"category": "Implementation\",\"pdf\":\"faiex/implementing-expenses.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faiex/index.html",
+"desc": "Describes tasks to configure and set up Expenses."
+},
+{
+"area": "fin",
+"title": "Implementing Financials for Asia/Pacific",
+"category": "Implementation\",\"pdf\":\"faiap/implementing-financials-for-asia-pacific.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faiap/index.html",
+"desc": "Describes tasks to configure and set up Financials for Asia/Pacific."
+},
+{
+"area": "fin",
+"title": "Implementing Financials for EMEA",
+"category": "Implementation\",\"pdf\":\"faigf/implementing-financials-for-emea.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faigf/index.html",
+"desc": "Describes tasks to configure and set up Financials for EMEA."
+},
+{
+"area": "fin",
+"title": "Implementing Joint Venture Management",
+"category": "Implementation\",\"pdf\":\"fajvi/implementing-joint-venture-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fajvi/index.html",
+"desc": "Implement Joint Venture Management to enable advanced management of joint ventures to ensure that costs and revenue are distributed to joint venture partners according to the terms in the joint operating agreement."
+},
+{
+"area": "fin",
+"title": "Implementing Lease Accounting",
+"category": "Implementation\",\"pdf\":\"faila/implementing-lease-accounting.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faila/index.html",
+"desc": "Describes tasks to configure and set up Lease Accounting."
+},
+{
+"area": "fin",
+"title": "Implementing Payables Invoice to Pay",
+"category": "Implementation\",\"pdf\":\"faipp/implementing-payables-invoice-to-pay.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faipp/index.html",
+"desc": "Describes tasks to configure and set up Payables Invoice to Pay."
+},
+{
+"area": "fin",
+"title": "Implementing Receivables Credit to Cash",
+"category": "Implementation\",\"pdf\":\"fairp/implementing-receivables-credit-to-cash.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fairp/index.html",
+"desc": "Describes tasks to configure and set up Receivables credit to cash, including customer billing, customer payments, accounts receivable, credit management, cash management, collections, and revenue management."
+},
+{
+"area": "fin",
+"title": "Implementing Subledger Accounting",
+"category": "Implementation\",\"pdf\":\"faisl/implementing-subledger-accounting.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faisl/index.html",
+"desc": "Describes tasks to configure and set up Oracle Fusion Subledger Accounting."
+},
+{
+"area": "fin",
+"title": "Implementing Tax",
+"category": "Implementation\",\"pdf\":\"faitx/implementing-tax.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faitx/index.html",
+"desc": "Describes tasks to configure and set up Oracle Fusion Tax."
+},
+{
+"area": "fin",
+"title": "Implementing U.S. Federal Financials",
+"category": "Implementation\",\"pdf\":\"fausf/implementing-u-s-federal-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fausf/index.html",
+"desc": "Describes tasks to configure and set up U.S. Federal Financials."
+},
+{
+"area": "fin",
+"title": "J.P. Morgan Supply Chain Finance Questions and Answers",
+"category": "Implementation\",\"pdf\":\"../fascq/j-p-morgan-supply-chain-finance-questions-and-answers.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fascq/index.html",
+"desc": "Describes tasks to set up Supply Chain Finance in a short answer format."
+},
+{
+"area": "fin",
+"title": "Set up virtual cards for supplier payments",
+"category": "Implementation\",\"pdf\":\"../favcp/set-up-virtual-cards-for-supplier-payments.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../favcp/index.html",
+"desc": "Describes tasks to set up and configure virtual card for supplier payments."
+},
+{
+"area": "fin",
+"title": "Understanding Enterprise Structures",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/faesc/understanding-enterprise-structures.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/faesc/index.html",
+"desc": "Describes fundamental enterprise structure concepts, including enterprises, legal entities, and reporting structures."
+},
+{
+"area": "fin",
+"title": "Using Functional Setup Manager",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/oafsm/using-functional-setup-manager.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oafsm/index.html",
+"desc": "Describes how to use Functional Setup Manager to manage implementation projects, execute task lists, and migrate data between application instances."
+},
+{
+"area": "fin",
+"title": "Virtual Card Questions and Answers",
+"category": "Implementation\",\"pdf\":\"../fafvc/virtual-card-questions-and-answers.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../fafvc/index.html",
+"desc": "Describes tasks to set up Virtual Card in a short answer format."
+},
+{
+"area": "fin",
+"title": "Administering Oracle Transactional Business Intelligence\",\"html\":\"../../../../../pls/topic/lookup?ctx=fa-latest&id=otbibooks\",\"category\":\"Administration\",\"position\":57},{\"title\":\"Best Practices for Scheduled Processes",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/fabps/best-practices-for-scheduled-processes.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/fabps/index.html",
+"desc": "Provides guidelines and tips for ensuring that scheduled processes run smoothly and quickly."
+},
+{
+"area": "fin",
+"title": "Creating a Business Intelligence Cloud Extract",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/biacc/creating-a-business-intelligence-cloud-extract.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/biacc/index.html",
+"desc": "Describes how to extract Oracle Fusion Cloud Applications data and load it into a data warehouse."
+},
+{
+"area": "fin",
+"title": "Data Extraction Tool",
+"category": "Administration\",\"pdf\":\"../../applications-common/faude/data-extraction-tool.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/faude/index.html",
+"desc": "This playbook provides a comprehensive overview of the Oracle Data Extraction tool, outlining its core features."
+},
+{
+"area": "fin",
+"title": "Extract Data Stores for Financials",
+"category": "Administration\",\"pdf\":\"oadsr/extract-data-stores-for-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oadsr/index.html",
+"desc": "Describes Business Intelligence Cloud Connector (BICC) Data Stores for Oracle Financials Cloud."
+},
+{
+"area": "fin",
+"title": "Oracle Applications Cloud Licensing Information User Manual",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/oalid/oracle-applications-cloud-licensing-information-user-manual.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oalid/index.html",
+"desc": "Details third-party licensing information for Oracle Applications."
+},
+{
+"area": "fin",
+"title": "Subject Areas for Transactional Business Intelligence in Financials",
+"category": "Administration\",\"pdf\":\"faofb/subject-areas-for-transactional-business-intelligence-in-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/faofb/index.html",
+"desc": "Provides descriptions, business questions, and security roles for the subject areas in Oracle Financials Cloud."
+},
+{
+"area": "fin",
+"title": "Configuring and Extending Applications",
+"category": "Configuration and Extension\",\"pdf\":\"../../applications-common/26d/oaext/configuring-and-extending-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oaext/index.html",
+"desc": "Describes how to use runtime tools such as Page Composer or flexfields to configure and extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "fin",
+"title": "How do I configure navigation in Oracle Fusion Cloud Applications?\",\"html\":\"../../applications-common/faacn/index.html\",\"category\":\"Configuration and Extension\",\"position\":65},{\"title\":\"How do I use AI Agent Studio?\",\"html\":\"../../fusion-ai/aiaas/\",\"category\":\"Configuration and Extension\",\"position\":66},{\"title\":\"Securing ERP",
+"category": "Security\",\"pdf\":\"../../applications-common/26d/faser/securing-erp.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/faser/index.html",
+"desc": "Describes how to enable user access to Oracle ERP Cloud functions and data."
+},
+{
+"area": "fin",
+"title": "Security Reference for Accounting Hub",
+"category": "Security\",\"pdf\":\"oaahm/security-reference-for-accounting-hub.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oaahm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Oracle Fusion Cloud Accounting Hub offering."
+},
+{
+"area": "fin",
+"title": "Security Reference for Common Features",
+"category": "Security\",\"pdf\":\"../../applications-common/26d/oacsm/security-reference-for-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oacsm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for use by all offerings."
+},
+{
+"area": "fin",
+"title": "Security Reference for Financials",
+"category": "Security\",\"pdf\":\"oafrm/security-reference-for-financials.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oafrm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Oracle Fusion Cloud Financials offering."
+},
+{
+"area": "fin",
+"title": "Business Objects for Oracle Fusion Cloud Financials",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/fabof/index.html",
+"desc": "Describes business objects and related artifacts for Oracle Fusion Cloud Financials."
+},
+{
+"area": "fin",
+"title": "Integrating with Oracle Transactional Business Intelligence\",\"html\":\"../../../../../pls/topic/lookup?ctx=fa-latest&id=otbibooks\",\"category\":\"APIs, Business Objects, & Schema\",\"position\":72},{\"title\":\"REST API for Common Features in Oracle Fusion Cloud Applications",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/farca/index.html",
+"desc": "<div><span style=\\\"color: #c74634\\\">Last Updated October 2026</span><br><br><p>You can use Oracle REST APIs to view and manage data stored in Oracle Fusion Cloud Applications.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start how-to that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST resource.</li></ul><p>Some REST resources are available in two versions: ADF and Spectra. Depending on availability, a resource might have only ADF, only Spectra, or both versions. For details on working with different resource versions, see the Quick Start and other topics in the Get Started section.</p></div>"
+},
+{
+"area": "fin",
+"title": "REST API for Oracle Fusion Cloud Financials",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/farfa/index.html",
+"desc": "<div><span><span style=\\\"color: #c74634;\\\">Last Updated October 2026</span><br><br><p>You can use Oracle REST APIs to view and manage data stored in Oracle Financials Cloud.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start how-to that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST resource.</li></ul></div>"
+},
+{
+"area": "fin",
+"title": "SOAP Web Services for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oeswa/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "fin",
+"title": "SOAP Web Services for Financials",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oeswf/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Financials Cloud."
+},
+{
+"area": "fin",
+"title": "Tables and Views for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/../../applications-common/26d/oedma/index.html",
+"desc": "Describes tables and views for common features within Oracle Fusion Cloud Applications."
+},
+{
+"area": "fin",
+"title": "Tables and Views for Financials",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/financials/26d/oedmf/index.html",
+"desc": "Describes tables and views for Oracle Financials Cloud."
+},
+{
+"area": "proc",
+"title": "Activating, Managing, and Monitoring Cloud Services\",\"html\":\"../../../../../en-us/iaas/Content/applications-manager/applications-services-home.htm\",\"category\":\"Get Started\",\"position\":1},{\"title\":\"Data Extraction Tool",
+"category": "Playbooks\",\"pdf\":\"../../applications-common/faude/data-extraction-tool.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/faude/index.html",
+"desc": "This playbook provides a comprehensive overview of the Oracle Data Extraction tool, outlining its core features."
+},
+{
+"area": "proc",
+"title": "How do I configure approvals?",
+"category": "Playbooks\",\"pdf\":\"../../applications-common/faapp/how-do-i-configure-approvals.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/faapp/index.html",
+"desc": "Describes how to configure approvals in Oracle Applications Cloud."
+},
+{
+"area": "proc",
+"title": "How do I configure navigation in Oracle Fusion Cloud Applications?",
+"category": "Playbooks\",\"pdf\":\"../../applications-common/faacn/how-do-i-configure-navigation-in-oracle-fusion-cloud-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/faacn/index.html",
+"desc": "Describes how administrators can configure navigation in Oracle Fusion Cloud Applications."
+},
+{
+"area": "proc",
+"title": "How do I get started with Sustainability?",
+"category": "Playbooks\",\"pdf\":\"../../supply-chain-and-manufacturing/26d/fahos/how-do-i-get-started-with-sustainability.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../supply-chain-and-manufacturing/26d/fahos/index.html",
+"desc": "Learn how to prepare for setting up Oracle Fusion Cloud Sustainability. In addition, learn how to set up and configure Oracle Sustainability to ensure that sustainability activities are successfully created and maintained in the system."
+},
+{
+"area": "proc",
+"title": "How do I set up Oracle External Purchase Prices?",
+"category": "Playbooks\",\"pdf\":\"faepp/how-do-i-set-up-oracle-external-purchase-prices.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/faepp/index.html",
+"desc": "Learn how to set up External Purchase Prices."
+},
+{
+"area": "proc",
+"title": "Oracle Search Cloud Service",
+"category": "Playbooks\",\"pdf\":\"../../human-resources/faeos/oracle-search-cloud-service.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../human-resources/faeos/index.html",
+"desc": "This playbook helps you in setting up Oracle Search."
+},
+{
+"area": "proc",
+"title": "Using Common Features",
+"category": "User\",\"pdf\":\"../../applications-common/26d/oacpr/using-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oacpr/index.html",
+"desc": "Provides help for end user features that are common across Oracle Fusion Cloud Applications."
+},
+{
+"area": "proc",
+"title": "Using Procurement",
+"category": "User\",\"pdf\":\"oaprc/using-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oaprc/index.html",
+"desc": "Describes user tasks for the procurement business process, including managing supplier information, creating purchase orders, and managing supplier negotiations."
+},
+{
+"area": "proc",
+"title": "Using Procurement Contracts",
+"category": "User\",\"pdf\":\"../../sales/fasca/using-procurement-contracts.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../sales/fasca/index.html",
+"desc": "Describes user tasks for creating and searching contracts, authoring contract terms, approving and accepting contracts, using contract fulfillment, configuring the contract terms library, and defining procurement contracts."
+},
+{
+"area": "proc",
+"title": "Implementing Procurement",
+"category": "Implementation\",\"pdf\":\"oapro/implementing-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oapro/index.html",
+"desc": "Describes tasks to configure and set up Oracle Procurement Cloud."
+},
+{
+"area": "proc",
+"title": "Understanding Enterprise Structures",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/faesc/understanding-enterprise-structures.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/faesc/index.html",
+"desc": "Describes fundamental enterprise structure concepts, including enterprises, legal entities, and reporting structures."
+},
+{
+"area": "proc",
+"title": "Using Functional Setup Manager",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/oafsm/using-functional-setup-manager.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oafsm/index.html",
+"desc": "Describes how to use Functional Setup Manager to manage implementation projects, execute task lists, and migrate data between application instances."
+},
+{
+"area": "proc",
+"title": "Best Practices for Scheduled Processes",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/fabps/best-practices-for-scheduled-processes.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/fabps/index.html",
+"desc": "Provides guidelines and tips for ensuring that scheduled processes run smoothly and quickly."
+},
+{
+"area": "proc",
+"title": "Creating a Business Intelligence Cloud Extract",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/biacc/creating-a-business-intelligence-cloud-extract.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/biacc/index.html",
+"desc": "Describes how to extract Oracle Fusion Cloud Applications data and load it into a data warehouse."
+},
+{
+"area": "proc",
+"title": "Creating and Administering Analytics and Reports for Procurement",
+"category": "Administration\",\"pdf\":\"fapaa/creating-and-administering-analytics-and-reports-for-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/fapaa/index.html",
+"desc": "Provides advanced instruction on creating, configuring, and administering Oracle Fusion Cloud Procurement analytics and reports."
+},
+{
+"area": "proc",
+"title": "Extract Data Stores for Procurement",
+"category": "Administration\",\"pdf\":\"../oadpr/extract-data-stores-for-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../oadpr/index.html",
+"desc": "Describes Oracle Business Intelligence Cloud Connector (BICC) data stores for Oracle Fusion Cloud Procurement."
+},
+{
+"area": "proc",
+"title": "Oracle Applications Cloud Licensing Information User Manual",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/oalid/oracle-applications-cloud-licensing-information-user-manual.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oalid/index.html",
+"desc": "Details third-party licensing information for Oracle Applications."
+},
+{
+"area": "proc",
+"title": "Scheduled Processes for Procurement",
+"category": "Administration\",\"pdf\":\"faspp/scheduled-processes-for-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/faspp/index.html",
+"desc": "This guide contains reference information for scheduled processes in Oracle Fusion Cloud Procurement."
+},
+{
+"area": "proc",
+"title": "Subject Areas for Transactional Business Intelligence in Procurement",
+"category": "Administration\",\"pdf\":\"faopb/subject-areas-for-transactional-business-intelligence-in-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/faopb/index.html",
+"desc": "Provides descriptions, business questions, and security roles for the subject areas in Oracle Fusion Cloud Procurement."
+},
+{
+"area": "proc",
+"title": "Configuring and Extending Applications",
+"category": "Configuration and Extension\",\"pdf\":\"../../applications-common/26d/oaext/configuring-and-extending-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oaext/index.html",
+"desc": "Describes how to use runtime tools such as Page Composer or flexfields to configure and extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "proc",
+"title": "Extending Redwood Applications for HCM and SCM Using Visual Builder Studio",
+"category": "Configuration and Extension\",\"pdf\":\"../../human-resources/fauvb/extending-redwood-applications-for-hcm-and-scm-using-visual-builder-studio.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../human-resources/fauvb/index.html",
+"desc": "Describes what and how to extend HCM Redwood pages using Visual Builder Studio."
+},
+{
+"area": "proc",
+"title": "Securing ERP",
+"category": "Security\",\"pdf\":\"../../applications-common/26d/faser/securing-erp.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/faser/index.html",
+"desc": "Describes how to enable user access to Oracle ERP Cloud functions and data."
+},
+{
+"area": "proc",
+"title": "Security Reference for Common Features",
+"category": "Security\",\"pdf\":\"../../applications-common/26d/oacsm/security-reference-for-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oacsm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for use by all offerings."
+},
+{
+"area": "proc",
+"title": "Security Reference for Procurement",
+"category": "Security\",\"pdf\":\"oapcm/security-reference-for-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oapcm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Procurement offering."
+},
+{
+"area": "proc",
+"title": "Business Objects for Oracle Fusion Cloud Procurement",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/fabop/index.html",
+"desc": "Business objects represent the data layer of an application and are abstractions of real-world objects that make up your business (for example, Customer, Order, Warehouse). Besides defining the shape of the data you\u2019re persisting, the business objects also define the logic associated with interacting with this data. These business objects may have relationships with other business objects and are grouped into modules, which are logical containers of one or more related business objects."
+},
+{
+"area": "proc",
+"title": "REST API for Common Features in Oracle Fusion Cloud Applications",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/farca/index.html",
+"desc": "<div><span style=\\\"color: #c74634\\\">Last Updated October 2026</span><br><br><p>You can use Oracle REST APIs to view and manage data stored in Oracle Fusion Cloud Applications.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start how-to that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST resource.</li></ul><p>Some REST resources are available in two versions: ADF and Spectra. Depending on availability, a resource might have only ADF, only Spectra, or both versions. For details on working with different resource versions, see the Quick Start and other topics in the Get Started section.</p></div>"
+},
+{
+"area": "proc",
+"title": "REST API for Oracle Fusion Cloud Procurement",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/fapra/index.html",
+"desc": "<div> <span style=\\\"color: #c74634\\\">Last Updated October 2026</span><br><br> <p>You can use Oracle REST APIs to view and manage data stored in Oracle Procurement Cloud.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST API resource.</li></ul></div>"
+},
+{
+"area": "proc",
+"title": "SOAP Web Services for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oeswa/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "proc",
+"title": "SOAP Web Services for Procurement",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oeswp/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud Procurement."
+},
+{
+"area": "proc",
+"title": "Tables and Views for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/../../applications-common/26d/oedma/index.html",
+"desc": "Describes tables and views for common features within Oracle Fusion Cloud Applications."
+},
+{
+"area": "proc",
+"title": "Tables and Views for Procurement",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oedmp/index.html",
+"desc": "Describes tables and views for Oracle Fusion Cloud Procurement."
+},
+{
+"area": "proc",
+"title": "File-Based Data Import (FBDI) for Procurement",
+"category": "Integration",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/oefbp/index.html",
+"desc": "Describes file-based data imports (FBDI) to import or update legacy and other data into Oracle Fusion Cloud Procurement from external applications."
+},
+{
+"area": "proc",
+"title": "Integration Playbooks for Procurement",
+"category": "Integration\",\"pdf\":\"fainp/integration-playbooks-for-procurement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/procurement/26d/fainp/index.html",
+"desc": "This guide contains integration playbooks for Oracle Fusion Cloud Procurement."
+},
+{
+"area": "scm",
+"title": "Activating, Managing, and Monitoring Cloud Services\",\"html\":\"../../../../../en-us/iaas/Content/applications-manager/applications-services-home.htm\",\"category\":\"Get Started\",\"position\":1},{\"title\":\"Getting Started with Service Logistics Implementation",
+"category": "Get Started\",\"pdf\":\"../../service-logistics/26d/fasgs/getting-started-with-service-logistics-implementation.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../service-logistics/26d/fasgs/index.html",
+"desc": "Describes how to set up and configure Oracle Service Logistics Cloud."
+},
+{
+"area": "scm",
+"title": "Getting Started with Your Maintenance Implementation",
+"category": "Get Started\",\"pdf\":\"fagmi/getting-started-with-your-maintenance-implementation.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fagmi/index.html",
+"desc": "Describes how to get started with the maintenance implementation quickly."
+},
+{
+"area": "scm",
+"title": "Getting Started with Your Manufacturing and Supply Chain Materials Management Implementation",
+"category": "Get Started\",\"pdf\":\"fammi/getting-started-with-your-manufacturing-and-supply-chain-materials-management-implementation.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fammi/index.html",
+"desc": "Describes how to get started quickly with your implementation of the Oracle Fusion Cloud Supply Chain and Manufacturing offering."
+},
+{
+"area": "scm",
+"title": "Data Extraction Tool",
+"category": "Playbooks\",\"pdf\":\"../../applications-common/faude/data-extraction-tool.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/faude/index.html",
+"desc": "This playbook provides a comprehensive overview of the Oracle Data Extraction tool, outlining its core features."
+},
+{
+"area": "scm",
+"title": "How do I configure navigation in Oracle Fusion Cloud Applications?",
+"category": "Playbooks\",\"pdf\":\"../../applications-common/faacn/how-do-i-configure-navigation-in-oracle-fusion-cloud-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/faacn/index.html",
+"desc": "Describes how administrators can configure navigation in Oracle Fusion Cloud Applications."
+},
+{
+"area": "scm",
+"title": "How do I get started with Sustainability?",
+"category": "Playbooks\",\"pdf\":\"fahos/how-do-i-get-started-with-sustainability.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fahos/index.html",
+"desc": "Learn how to prepare for setting up Oracle Fusion Cloud Sustainability. In addition, learn how to set up and configure Oracle Sustainability to ensure that sustainability activities are successfully created and maintained in the system."
+},
+{
+"area": "scm",
+"title": "How do I set up Collaboration Messaging?",
+"category": "Playbooks\",\"pdf\":\"faclm/how-do-i-set-up-collaboration-messaging.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faclm/index.html",
+"desc": "The steps a new user has to follow to set up and configure collaboration messaging."
+},
+{
+"area": "scm",
+"title": "How do I set up Oracle Advanced Inventory Management?",
+"category": "Playbooks\",\"pdf\":\"famia/how-do-i-set-up-oracle-advanced-inventory-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/famia/index.html",
+"desc": "Describes user tasks to set up Advanced Inventory Management including LPN, Cross-Docking, and load numbers for shipments, and put away suggestions."
+},
+{
+"area": "scm",
+"title": "Oracle Search Cloud Service",
+"category": "Playbooks\",\"pdf\":\"../../human-resources/faeos/oracle-search-cloud-service.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../human-resources/faeos/index.html",
+"desc": "This playbook helps you in setting up Oracle Search."
+},
+{
+"area": "scm",
+"title": "Using Backlog Management",
+"category": "User\",\"pdf\":\"faubm/using-backlog-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faubm/index.html",
+"desc": "Describes user tasks for the order backlog management business process, such as running backlog plans, simulating scheduling scenarios, reviewing them using advanced analytics, and releasing planning results to an order management system."
+},
+{
+"area": "scm",
+"title": "Using Common Features",
+"category": "User\",\"pdf\":\"../../applications-common/26d/oacpr/using-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oacpr/index.html",
+"desc": "Provides help for end user features that are common across Oracle Fusion Cloud Applications."
+},
+{
+"area": "scm",
+"title": "Using Customer Channel Management",
+"category": "User\",\"pdf\":\"faccm/using-customer-channel-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faccm/index.html",
+"desc": "Describes the user tasks for the channel customer flows, including creating programs, accruals, and generating and settling claims."
+},
+{
+"area": "scm",
+"title": "Using Deductions and Settlement",
+"category": "User\",\"pdf\":\"fauds/using-deductions-and-settlement.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauds/index.html",
+"desc": "Describes the user tasks for users of Deductions and Settlement in Channel Revenue Management, including creation, resolution, submission, and settlement of deduction and overpayment claims."
+},
+{
+"area": "scm",
+"title": "Using Demand Collaboration",
+"category": "User\",\"pdf\":\"faudc/using-demand-collaboration.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faudc/index.html",
+"desc": "Describes user and administrative tasks for demand collaboration business processes, like reviewing collaboration measure analytics, updating collaboration measure data, managing customer demand documents, and synchronizing collaboration data for demand management."
+},
+{
+"area": "scm",
+"title": "Using Demand Management",
+"category": "User\",\"pdf\":\"fasdm/using-demand-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fasdm/index.html",
+"desc": "Describes user tasks for the demand management business process, including managing demand plans, monitoring exceptions, generating forecasts, using advanced analytics to consider potential plan changes, and releasing recommendations to other Oracle Fusion Cloud SCM modules."
+},
+{
+"area": "scm",
+"title": "Using Fiscal Document Capture",
+"category": "User\",\"pdf\":\"fafdc/using-fiscal-document-capture.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fafdc/index.html",
+"desc": "Describes user tasks for working with fiscal documents."
+},
+{
+"area": "scm",
+"title": "Using Innovation Management",
+"category": "User\",\"pdf\":\"fauim/using-innovation-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauim/index.html",
+"desc": "Describes user tasks to analyze factors that drive innovation, such as ideas, requirements, concepts, proposals, and portfolios, in order to choose the best products to build."
+},
+{
+"area": "scm",
+"title": "Using Inventory Management",
+"category": "User\",\"pdf\":\"../26c/famml/using-inventory-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/famml/index.html",
+"desc": "Describes user tasks for managing inventory including reviewing inventory balances, managing inventory transactions, managing consigned inventory from suppliers, planning inventory replenishment, and performing cycle and physical inventory counts."
+},
+{
+"area": "scm",
+"title": "Using Maintenance",
+"category": "User\",\"pdf\":\"faumm/using-maintenance.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faumm/index.html",
+"desc": "Describes user tasks for defining maintenance work, including creating and maintaining assets, work areas, work centers, resources, work definitions, and operations. This guide also describes user tasks for executing maintenance work, including creating work orders, reviewing dispatch lists, and reporting material and resource transactions."
+},
+{
+"area": "scm",
+"title": "Using Manufacturing",
+"category": "User\",\"pdf\":\"faumf/using-manufacturing.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faumf/index.html",
+"desc": "Describes user tasks for defining work, including creating and maintaining work areas, work centers, resources, work definitions, and operations, and for executing work, including creating work orders and reviewing dispatch lists."
+},
+{
+"area": "scm",
+"title": "Using Order Management",
+"category": "User\",\"pdf\":\"fauom/using-order-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauom/index.html",
+"desc": "Learn how to create sales orders, and then manage them during order fulfillment."
+},
+{
+"area": "scm",
+"title": "Using Order Promising",
+"category": "User\",\"pdf\":\"fascp/using-order-promising.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fascp/index.html",
+"desc": "Learn how to set up order promising in your supply chain, including how to promise sales orders, manage your promising rules, collect data, and other important tasks."
+},
+{
+"area": "scm",
+"title": "Using Planning Central",
+"category": "User\",\"pdf\":\"../26c/faupc/using-planning-central.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/faupc/index.html",
+"desc": "Describes user tasks for demand and supply planning, including managing plans, monitoring exceptions, using advanced analytics to consider potential plan changes, and releasing supply recommendations to other Oracle Fusion Cloud SCM applications."
+},
+{
+"area": "scm",
+"title": "Using Product Development",
+"category": "User\",\"pdf\":\"faupd/using-product-development.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faupd/index.html",
+"desc": "Describes how to work with these elements of product assembly: items and manufacturer parts; structures (the Bill of Materials); and change orders."
+},
+{
+"area": "scm",
+"title": "Using Product Master Data Management",
+"category": "User\",\"pdf\":\"fapim/using-product-master-data-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fapim/index.html",
+"desc": "Describes user tasks for managing product catalogs, specifications, relationships, structures, and versions. Also describes importing and exporting product data and ensuring its quality."
+},
+{
+"area": "scm",
+"title": "Using Product Recall Management",
+"category": "User\",\"pdf\":\"fampr/using-product-recall-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fampr/index.html",
+"desc": "Describes user tasks for managing product recalls."
+},
+{
+"area": "scm",
+"title": "Using Production Scheduling",
+"category": "User\",\"pdf\":\"../26c/fapsu/using-production-scheduling.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/fapsu/index.html",
+"desc": "Describes user tasks for the production scheduling business process, such as creating a production schedule for a manufacturing organization solving and manually adjusting the schedule, and releasing the schedule to the manufacturing application."
+},
+{
+"area": "scm",
+"title": "Using Quality Management",
+"category": "User\",\"pdf\":\"fauqm/using-quality-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauqm/index.html",
+"desc": "Describes user tasks for inspections and managing quality issues, including managing corrective and preventive actions."
+},
+{
+"area": "scm",
+"title": "Using Receiving",
+"category": "User\",\"pdf\":\"famli/using-receiving.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/famli/index.html",
+"desc": "Describes user tasks for receiving including managing inbound shipments, receiving shipments, inspecting material, putting away loads, creating and matching unordered receipts, managing returns and corrections, and managing self-service receipts."
+},
+{
+"area": "scm",
+"title": "Using Replenishment Planning",
+"category": "User\",\"pdf\":\"faurp/using-replenishment-planning.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faurp/index.html",
+"desc": "Describes user tasks for the replenishment planning business process, including managing replenishment plans, monitoring exceptions, using segment groups and policy assignment sets, generating forecasts, using advanced analytics to consider potential plan changes, and releasing recommendations to other Oracle Fusion Cloud SCM modules."
+},
+{
+"area": "scm",
+"title": "Using Sales and Operations Planning",
+"category": "User\",\"pdf\":\"fasop/using-sales-and-operations-planning.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fasop/index.html",
+"desc": "Describes user tasks for sales and operations planning, including managing plans, monitoring exceptions, and using advanced analytics to consider potential plan changes to other Oracle Fusion Cloud SCM applications."
+},
+{
+"area": "scm",
+"title": "Using Service Logistics",
+"category": "User\",\"pdf\":\"../../service-logistics/26d/fasul/using-service-logistics.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../service-logistics/26d/fasul/index.html",
+"desc": "Describes how to use Oracle Service Logistics Cloud to order and receive parts, manage trunk stock and assign stocking locations to technicians."
+},
+{
+"area": "scm",
+"title": "Using Shipping",
+"category": "User\",\"pdf\":\"famlo/using-shipping.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/famlo/index.html",
+"desc": "Describes user tasks for managing and releasing pick waves, processing and confirming shipments, reserving inventory, and analyzing materials management and logistics."
+},
+{
+"area": "scm",
+"title": "Using Supplier Channel Management",
+"category": "User\",\"pdf\":\"facru/using-supplier-channel-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/facru/index.html",
+"desc": "Describes the user tasks for the channel business flows, including creating programs, accruals, and adjustments, and generating and settling claims."
+},
+{
+"area": "scm",
+"title": "Using Supply Chain Collaboration",
+"category": "User\",\"pdf\":\"faucc/using-supply-chain-collaboration.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faucc/index.html",
+"desc": "Describes user tasks for supply chain collaboration."
+},
+{
+"area": "scm",
+"title": "Using Supply Chain Cost Management",
+"category": "User\",\"pdf\":\"fapma/using-supply-chain-cost-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fapma/index.html",
+"desc": "Describes user tasks to perform receipt accounting, cost accounting, cost and profit planning, and landed cost management."
+},
+{
+"area": "scm",
+"title": "Using Supply Chain Financial Orchestration",
+"category": "User\",\"pdf\":\"fauso/using-supply-chain-financial-orchestration.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauso/index.html",
+"desc": "Describes user tasks for orchestrating supply chain financial flows."
+},
+{
+"area": "scm",
+"title": "Using Supply Chain Orchestration",
+"category": "User\",\"pdf\":\"fauco/using-supply-chain-orchestration.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauco/index.html",
+"desc": "Learn how to use supply chain orchestration to manage your supply orders."
+},
+{
+"area": "scm",
+"title": "Using Supply Chain Planning Common Features",
+"category": "User\",\"pdf\":\"../26c/faspf/using-supply-chain-planning-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/faspf/index.html",
+"desc": "Describes user tasks common to two or more of the Oracle Fusion Cloud Supply Chain Planning work areas, including the Demand Management, Planning Central, Sales and Operations Planning, and Supply Planning work areas. The tasks include managing plans, monitoring exceptions, using advanced analytics to consider potential plan changes, and releasing recommendations to other Oracle Fusion Cloud SCM modules."
+},
+{
+"area": "scm",
+"title": "Using Supply Planning",
+"category": "User\",\"pdf\":\"../26c/fausp/using-supply-planning.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/fausp/index.html",
+"desc": "Describes user tasks for supply planning, including managing and comparing supply plans, monitoring exceptions, using advanced analytics to consider potential plan changes, and releasing supply recommendations to other Oracle Fusion Cloud SCM applications."
+},
+{
+"area": "scm",
+"title": "Configuring and Managing B2B Messaging",
+"category": "Implementation\",\"pdf\":\"facmm/configuring-and-managing-b2b-messaging.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/facmm/index.html",
+"desc": "Describes user tasks for enabling Oracle Fusion applications to establish B2B message exchanging capabilities with customers or suppliers using Oracle Fusion Collaboration Messaging."
+},
+{
+"area": "scm",
+"title": "Implementing Channel Revenue Management",
+"category": "Implementation\",\"pdf\":\"facri/implementing-channel-revenue-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/facri/index.html",
+"desc": "Describes tasks to configure and set up Channel Revenue Management."
+},
+{
+"area": "scm",
+"title": "Implementing Common Features for SCM",
+"category": "Implementation\",\"pdf\":\"faicf/implementing-common-features-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faicf/index.html",
+"desc": "Describes how to configure features that are common to the Oracle Fusion Cloud Supply Chain and Manufacturing offerings."
+},
+{
+"area": "scm",
+"title": "Implementing Innovation Management",
+"category": "Implementation\",\"pdf\":\"oaimi/implementing-innovation-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/oaimi/index.html",
+"desc": "Provides help for implementers of Innovation Management, organized by task list, in a convenient format for downloading or printing."
+},
+{
+"area": "scm",
+"title": "Implementing Manufacturing and Supply Chain Materials Management",
+"category": "Implementation\",\"pdf\":\"faims/implementing-manufacturing-and-supply-chain-materials-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faims/index.html",
+"desc": "Describes how to configure the processes that support manufacturing, inventory, shipping, receiving, supply chain managerial accounting, supply chain financial orchestration, and supply chain orchestration."
+},
+{
+"area": "scm",
+"title": "Implementing Order Management",
+"category": "Implementation\",\"pdf\":\"faiom/implementing-order-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faiom/index.html",
+"desc": "Learn how to administer Oracle Order Management, including how to integrate Order Management with other systems and applications, import source orders, control application behavior and order processing, and set up orchestration processes."
+},
+{
+"area": "scm",
+"title": "Implementing Product Management",
+"category": "Implementation\",\"pdf\":\"faipr/implementing-product-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faipr/index.html",
+"desc": "Describes tasks to configure how you create and manage items, catalogs, and related processes, as well as the structures to support receipt accounting for purchased items, cost accounting for financial reporting, and product profitability management."
+},
+{
+"area": "scm",
+"title": "Implementing Supply Chain Planning",
+"category": "Implementation\",\"pdf\":\"faivc/implementing-supply-chain-planning.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faivc/index.html",
+"desc": "Describes tasks to configure and set up the module in Oracle Fusion Cloud Supply Chain Planning for your integrated demand and supply planning processes and how to set up and run collections."
+},
+{
+"area": "scm",
+"title": "Modeling Configurations for SCM",
+"category": "Implementation\",\"pdf\":\"facmg/modeling-configurations-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/facmg/index.html",
+"desc": "Learn how to set up and maintain your configurator models. Import snapshots, create a supplemental model structure, set up configurator rules, create a custom user interface, and release your models to production."
+},
+{
+"area": "scm",
+"title": "Understanding Enterprise Structures",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/faesc/understanding-enterprise-structures.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/faesc/index.html",
+"desc": "Describes fundamental enterprise structure concepts, including enterprises, legal entities, and reporting structures."
+},
+{
+"area": "scm",
+"title": "Using Functional Setup Manager",
+"category": "Implementation\",\"pdf\":\"../../applications-common/26d/oafsm/using-functional-setup-manager.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oafsm/index.html",
+"desc": "Describes how to use Functional Setup Manager to manage implementation projects, execute task lists, and migrate data between application instances."
+},
+{
+"area": "scm",
+"title": "Administering Pricing",
+"category": "Administration\",\"pdf\":\"faupr/administering-pricing.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faupr/index.html",
+"desc": "Learn how to administer pricing, including setting up pricing profiles, segments, and strategies. Manage price lists, cost lists, discount lists, shipping charge lists, and currency conversion lists. Manage pricing algorithms, service mappings, and matrix classes. Manage user interface elements and other objects that involve pricing."
+},
+{
+"area": "scm",
+"title": "Best Practices for Scheduled Processes",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/fabps/best-practices-for-scheduled-processes.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/fabps/index.html",
+"desc": "Provides guidelines and tips for ensuring that scheduled processes run smoothly and quickly."
+},
+{
+"area": "scm",
+"title": "Creating a Business Intelligence Cloud Extract",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/biacc/creating-a-business-intelligence-cloud-extract.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/biacc/index.html",
+"desc": "Describes how to extract Oracle Fusion Cloud Applications data and load it into a data warehouse."
+},
+{
+"area": "scm",
+"title": "Creating and Administering Analytics and Reports for SCM",
+"category": "Administration\",\"pdf\":\"fauca/creating-and-administering-analytics-and-reports-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fauca/index.html",
+"desc": "Provides advanced instruction on creating, configuring, and administering Oracle Fusion Cloud SCM analytics and reports."
+},
+{
+"area": "scm",
+"title": "Extract Data Stores for SCM",
+"category": "Administration\",\"pdf\":\"../oadsc/extract-data-stores-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../oadsc/index.html",
+"desc": "Describes Oracle Business Intelligence Cloud Connector (BICC) data stores for Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "Oracle Applications Cloud Licensing Information User Manual",
+"category": "Administration\",\"pdf\":\"../../applications-common/26d/oalid/oracle-applications-cloud-licensing-information-user-manual.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oalid/index.html",
+"desc": "Details third-party licensing information for Oracle Applications."
+},
+{
+"area": "scm",
+"title": "Scheduled Processes for SCM",
+"category": "Administration\",\"pdf\":\"faspc/scheduled-processes-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faspc/index.html",
+"desc": "This guide contains reference information about scheduled processes for Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "Subject Areas for Transactional Business Intelligence in SCM",
+"category": "Administration\",\"pdf\":\"faosm/subject-areas-for-transactional-business-intelligence-in-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faosm/index.html",
+"desc": "Provides descriptions, business questions, and security roles for the subject areas in Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "Configuring and Extending Applications",
+"category": "Configuration and Extension\",\"pdf\":\"../../applications-common/26d/oaext/configuring-and-extending-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oaext/index.html",
+"desc": "Describes how to use runtime tools such as Page Composer or flexfields to configure and extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "scm",
+"title": "Configuring and Extending Product Lifecycle Management",
+"category": "Configuration and Extension\",\"pdf\":\"facep/configuring-and-extending-product-lifecycle-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/facep/index.html",
+"desc": "Describes how to use Application Composer to configure and extend objects and application interfaces in Product Lifecycle Management solutions such as Oracle Innovation Management Cloud, Oracle Product Development Cloud, and Oracle Quality Management Cloud."
+},
+{
+"area": "scm",
+"title": "Extending Redwood Applications for HCM and SCM Using Visual Builder Studio",
+"category": "Configuration and Extension\",\"pdf\":\"../../human-resources/fauvb/extending-redwood-applications-for-hcm-and-scm-using-visual-builder-studio.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../human-resources/fauvb/index.html",
+"desc": "Describes what and how to extend HCM Redwood pages using Visual Builder Studio."
+},
+{
+"area": "scm",
+"title": "Groovy Scripting Reference",
+"category": "Configuration and Extension\",\"pdf\":\"../../applications-common/26d/cgsac/groovy-scripting-reference.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/cgsac/index.html",
+"desc": "Explains the basics of using the Groovy scripting language to enhance your Oracle Applications Cloud offerings."
+},
+{
+"area": "scm",
+"title": "Integrating Service Logistics with Field Service",
+"category": "Configuration and Extension\",\"pdf\":\"../../service-logistics/26d/faisf/integrating-service-logistics-with-field-service.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../service-logistics/26d/faisf/index.html",
+"desc": "Describes how Service Logistics Cloud integrates with Field Service Cloud to enable parts fulfillment and technician and inventory synchronization."
+},
+{
+"area": "scm",
+"title": "Securing SCM",
+"category": "Security\",\"pdf\":\"fassc/securing-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fassc/index.html",
+"desc": "Describes role-based access controls provided by Oracle Fusion Cloud SCM, and the tasks required to implement these controls so that users have appropriate access to data and functions. This guide describes the use of the Security Console to review, analyze, compare, copy, and edit security roles."
+},
+{
+"area": "scm",
+"title": "Security Reference for Common Features",
+"category": "Security\",\"pdf\":\"../../applications-common/26d/oacsm/security-reference-for-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oacsm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for use by all offerings."
+},
+{
+"area": "scm",
+"title": "Security Reference for Manufacturing and Supply Chain Materials Management",
+"category": "Security\",\"pdf\":\"fammm/security-reference-for-manufacturing-and-supply-chain-materials-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fammm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Oracle Manufacturing and Supply Chain Materials Management offering."
+},
+{
+"area": "scm",
+"title": "Security Reference for Order Management",
+"category": "Security\",\"pdf\":\"farom/security-reference-for-order-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/farom/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Order Management offering."
+},
+{
+"area": "scm",
+"title": "Security Reference for Product Management",
+"category": "Security\",\"pdf\":\"faspm/security-reference-for-product-management.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faspm/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Product Management offering."
+},
+{
+"area": "scm",
+"title": "Security Reference for Supply Chain Planning",
+"category": "Security\",\"pdf\":\"fasvc/security-reference-for-supply-chain-planning.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fasvc/index.html",
+"desc": "Provides a reference of roles, role hierarchies, privileges, and policies as delivered for the Supply Chain Planning offering."
+},
+{
+"area": "scm",
+"title": "Business Objects for Oracle Fusion Cloud SCM",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fabsm/index.html",
+"desc": "Business objects represent the data layer of an application and are abstractions of real-world objects that make up your business (for example, Customer, Order, Warehouse). Besides defining the shape of the data you\u2019re persisting, the business objects also define the logic associated with interacting with this data. These business objects may have relationships with other business objects and are grouped into modules, which are logical containers of one or more related business objects."
+},
+{
+"area": "scm",
+"title": "Oracle Fusion Cloud SCM Java API Reference for Oracle Fusion Configurator\",\"category\":\"APIs, Business Objects, & Schema\",\"html\":\"facjr/index.html\",\"position\":73},{\"title\":\"REST API for Common Features in Oracle Fusion Cloud Applications",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/farca/index.html",
+"desc": "<div><span style=\\\"color: #c74634\\\">Last Updated October 2026</span><br><br><p>You can use Oracle REST APIs to view and manage data stored in Oracle Fusion Cloud Applications.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start how-to that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST resource.</li></ul><p>Some REST resources are available in two versions: ADF and Spectra. Depending on availability, a resource might have only ADF, only Spectra, or both versions. For details on working with different resource versions, see the Quick Start and other topics in the Get Started section.</p></div>"
+},
+{
+"area": "scm",
+"title": "REST API for Oracle Fusion Cloud SCM",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../26c/fasrp/index.html",
+"desc": "<div> <span style=\\\"color: #c74634\\\">Last Updated July 2026</span><br><br> <p>You can use Oracle REST APIs to view and manage data stored in Oracle Supply Chain Management Cloud.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start that walks you through a simple request example.</li><li>Detailed descriptions for each REST API resource.</li></ul></div>"
+},
+{
+"area": "scm",
+"title": "SOAP Web Services for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oeswa/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud Applications."
+},
+{
+"area": "scm",
+"title": "SOAP Web Services for SCM",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/oessc/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "Tables and Views for Common Features",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/../../applications-common/26d/oedma/index.html",
+"desc": "Describes tables and views for common features within Oracle Fusion Cloud Applications."
+},
+{
+"area": "scm",
+"title": "Tables and Views for SCM",
+"category": "APIs, Business Objects, & Schema",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/oedsc/index.html",
+"desc": "Describes tables and views for Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "File-Based Data Import (FBDI) for SCM",
+"category": "Integration",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/oefsc/index.html",
+"desc": "Describes file-based data imports (FBDI) to import or update legacy and other data into Oracle Fusion Cloud SCM from external applications."
+},
+{
+"area": "scm",
+"title": "Integration Playbooks for SCM",
+"category": "Integration\",\"pdf\":\"faips/integration-playbooks-for-scm.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/faips/index.html",
+"desc": "This guide contains integration playbooks for Oracle Fusion Cloud SCM."
+},
+{
+"area": "scm",
+"title": "Sync Items from Oracle Fusion Cloud SCM to Epic",
+"category": "Integration\",\"pdf\":\"fasye/sync-items-from-oracle-fusion-cloud-scm-to-epic.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fasye/index.html",
+"desc": "Describes the tasks to install, configure, and run the recipe that can sync items from Oracle Fusion Cloud SCM to Epic."
+},
+{
+"area": "scm",
+"title": "Sync Items From Oracle Fusion Cloud SCM to Oracle Health EHR",
+"category": "Integration\",\"pdf\":\"fasih/sync-items-from-oracle-fusion-cloud-scm-to-oracle-health-ehr.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26d/fasih/index.html",
+"desc": "Describes the tasks to install, configure, and run the accelerator that can sync items from Oracle Fusion Cloud SCM to Oracle Health EHR."
+},
+{
+"area": "common",
+"title": "Administering Oracle Analytics Publisher in Oracle Transactional Business Intelligence",
+"category": "Other\",\"position\":1},{\"title\":\"Administering Oracle Transactional Business Intelligence\",\"description\":\"Describes how to administer Oracle Transactional Business Intelligence.\",\"pdf\":\"../../otbi/otbi-admin/administering-oracle-transactional-business-intelligence.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../../otbi/otbi-admin/index.html",
+"desc": "Describes how to administer Publisher, define delivery servers, and configure run-time properties.\",\"pdf\":\"../../otbi/otbi-pub-admin/administering-oracle-analytics-publisher-oracle-transactional-business-intelligence.pdf\",\"html\":\"../../otbi/otbi-pub-admin/index.html"
+},
+{
+"area": "common",
+"title": "Best Practices for Scheduled Processes",
+"category": "Other\",\"position\":3},{\"title\":\"Configuring and Extending Applications\",\"description\":\"Describes how to use runtime tools such as Page Composer or flexfields to configure and extend Oracle Fusion Cloud Applications.\",\"pdf\":\"oaext/configuring-and-extending-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/oaext/index.html",
+"desc": "Provides guidelines and tips for ensuring that scheduled processes run smoothly and quickly.\",\"pdf\":\"fabps/best-practices-for-scheduled-processes.pdf\",\"html\":\"fabps/index.html"
+},
+{
+"area": "common",
+"title": "Creating a Business Intelligence Cloud Extract",
+"category": "Other\",\"position\":5},{\"title\":\"Creating Analyses and Dashboards in Oracle Transactional Business Intelligence\",\"description\":\"Describes how to use Oracle Transactional Business Intelligence to create reports and dashboards, manage content, and share it with other users.\",\"pdf\":\"../../otbi/otbi-user/creating-analyses-and-dashboards-oracle-transactional-business-intelligence.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../../otbi/otbi-user/index.html",
+"desc": "Describes how to extract Oracle Fusion Cloud Applications data and load it into a data warehouse.\",\"pdf\":\"biacc/creating-a-business-intelligence-cloud-extract.pdf\",\"html\":\"biacc/index.html"
+},
+{
+"area": "common",
+"title": "Creating and Administering Analytics and Reports",
+"category": "Other\",\"position\":7},{\"title\":\"Data Extraction Tool\",\"description\":\"This playbook provides a comprehensive overview of the Oracle Data Extraction tool, outlining its core features.\",\"pdf\":\"../faude/data-extraction-tool.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../faude/index.html",
+"desc": "Provides advanced instruction on creating, configuring, and administering analytics and reports in Oracle Applications Cloud.\",\"pdf\":\"faacc/creating-and-administering-analytics-and-reports.pdf\",\"html\":\"faacc/index.html"
+},
+{
+"area": "common",
+"title": "Designing Pixel-Perfect Reports in Oracle Transactional Business Intelligence",
+"category": "Other\",\"position\":9},{\"title\":\"Getting Started with Oracle Digital Assistant for Fusion Applications\",\"description\":\"Describes how to do general tasks, such as configure, access, set up, export, import, and upgrade digital assistant for your Oracle Fusion Cloud Applications.\",\"pdf\":\"fagda/getting-started-with-oracle-digital-assistant-for-fusion-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/fagda/index.html",
+"desc": "Describes how to model data and design pixel-perfect reports in Publisher.\",\"pdf\":\"../../otbi/otbi-pub-design/designing-pixel-perfect-reports-oracle-transactional-business-intelligence.pdf\",\"html\":\"../../otbi/otbi-pub-design/index.html"
+},
+{
+"area": "common",
+"title": "Groovy Scripting Reference",
+"category": "Other\",\"position\":11},{\"title\":\"How do I configure navigation in Oracle Fusion Cloud Applications?\",\"description\":\"Describes how administrators can configure navigation in Oracle Fusion Cloud Applications.\",\"pdf\":\"../faacn/how-do-i-configure-navigation-in-oracle-fusion-cloud-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../faacn/index.html",
+"desc": "Explains the basics of using the Groovy scripting language to enhance your Oracle Applications Cloud offerings.\",\"pdf\":\"cgsac/groovy-scripting-reference.pdf\",\"html\":\"cgsac/index.html"
+},
+{
+"area": "common",
+"title": "How do I use AI Agent Studio?",
+"category": "Other\",\"position\":13},{\"title\":\"Implementing and Using Journeys\",\"description\":\"Describes tasks to configure, set up, and use Journeys.\",\"pdf\":\"../../human-resources/faijh/implementing-and-using-journeys.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../../human-resources/faijh/index.html",
+"desc": "Describes how administrators can use AI Agent Studio to create agentic workflows with topics, tools, and instructions.\",\"pdf\":\"../../fusion-ai/26d/aiaas/how-do-i-use-ai-agent-studio.pdf\",\"html\":\"../../fusion-ai/26d/aiaas/index.html"
+},
+{
+"area": "common",
+"title": "Implementing Applications",
+"category": "Other\",\"position\":15},{\"title\":\"Known Issues for Oracle Transactional Business Intelligence\",\"description\":\"Describes information about known software issues and their workarounds for this release of Oracle Transactional Business Intelligence.\",\"pdf\":\"../../otbi/otbi-known-issues/known-issues-oracle-transactional-business-intelligence.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../../otbi/otbi-known-issues/index.html",
+"desc": "Describes setup tasks that apply to multiple or all applications in Oracle Fusion Cloud Applications.\",\"pdf\":\"facia/implementing-applications.pdf\",\"html\":\"facia/index.html"
+},
+{
+"area": "common",
+"title": "Oracle Applications Cloud Licensing Information User Manual",
+"category": "Other\",\"position\":17},{\"title\":\"Questions and Answers for Common Features\",\"description\":\"Contains questions and answers about common features in Oracle Fusion Cloud Applications.\",\"pdf\":\"../faaqa/questions-and-answers-for-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../faaqa/index.html",
+"desc": "Details third-party licensing information for Oracle Applications.\",\"pdf\":\"oalid/oracle-applications-cloud-licensing-information-user-manual.pdf\",\"html\":\"oalid/index.html"
+},
+{
+"area": "common",
+"title": "REST API for Common Features in Oracle Fusion Cloud Applications",
+"category": "Other\",\"position\":19},{\"title\":\"Securing Applications\",\"description\":\"Describes how to enable user access to functions and data in Oracle Fusion Cloud Applications.\",\"pdf\":\"facsa/securing-applications.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/facsa/index.html",
+"desc": "<div><span style=\\\"color: #c74634\\\">Last Updated October 2026</span><br><br><p>You can use Oracle REST APIs to view and manage data stored in Oracle Fusion Cloud Applications.</p><p>Whether you're experienced with or new to REST, use this guide to find what you need, including:</p><ul><li>A quick start how-to that walks you through a simple request example.</li><li>Use cases that provide real-world solutions with code examples.</li><li>Detailed descriptions for each REST resource.</li></ul><p>Some REST resources are available in two versions: ADF and Spectra. Depending on availability, a resource might have only ADF, only Spectra, or both versions. For details on working with different resource versions, see the Quick Start and other topics in the Get Started section.</p></div>\",\"html\":\"farca/index.html"
+},
+{
+"area": "common",
+"title": "Securing ERP",
+"category": "Other\",\"position\":21},{\"title\":\"Security Reference for Common Features\",\"description\":\"Provides a reference of roles, role hierarchies, privileges, and policies as delivered for use by all offerings.\",\"pdf\":\"oacsm/security-reference-for-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/oacsm/index.html",
+"desc": "Describes how to enable user access to Oracle ERP Cloud functions and data.\",\"pdf\":\"faser/securing-erp.pdf\",\"html\":\"faser/index.html"
+},
+{
+"area": "common",
+"title": "SOAP Web Services for Common Features",
+"category": "Other\",\"position\":23},{\"title\":\"Tables and Views for Common Features\",\"description\":\"Describes tables and views for common features within Oracle Fusion Cloud Applications.",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/oedma/index.html",
+"desc": "Describes SOAP web services to integrate with or extend Oracle Fusion Cloud Applications.\",\"html\":\"oeswa/index.html"
+},
+{
+"area": "common",
+"title": "Understanding Enterprise Structures",
+"category": "Other\",\"position\":25},{\"title\":\"Using Common Features\",\"description\":\"Provides help for end user features that are common across Oracle Fusion Cloud Applications.\",\"pdf\":\"oacpr/using-common-features.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/oacpr/index.html",
+"desc": "Describes fundamental enterprise structure concepts, including enterprises, legal entities, and reporting structures.\",\"pdf\":\"faesc/understanding-enterprise-structures.pdf\",\"html\":\"faesc/index.html"
+},
+{
+"area": "common",
+"title": "Using Functional Setup Manager",
+"category": "Other\",\"position\":27},{\"title\":\"Using Oracle Analytics Publisher in Oracle Transactional Business Intelligence\",\"description\":\"Describes how to view, schedule, deliver, publish, and share the reports created in Publisher.\",\"pdf\":\"../../otbi/otbi-pub-user/using-oracle-analytics-publisher-oracle-transactional-business-intelligence.pdf",
+"url": "https://docs.oracle.com/en/cloud/saas/applications-common/26d/../../otbi/otbi-pub-user/index.html",
+"desc": "Describes how to use Functional Setup Manager to manage implementation projects, execute task lists, and migrate data between application instances.\",\"pdf\":\"oafsm/using-functional-setup-manager.pdf\",\"html\":\"oafsm/index.html"
+}
+]

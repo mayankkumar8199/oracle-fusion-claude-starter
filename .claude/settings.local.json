@@ -1,0 +1,14 @@
+{
+  "enabledMcpjsonServers": [
+    "oracle-fusion"
+  ],
+  "permissions": {
+    "allow": [
+      "mcp__oracle-fusion__connection_status",
+      "mcp__oracle-fusion__get_api_info",
+      "mcp__oracle-fusion__list_invoices",
+      "mcp__oracle-fusion__get_invoice",
+      "mcp__oracle-fusion__fusion_get"
+    ]
+  }
+}
