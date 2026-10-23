@@ -315,6 +315,15 @@ Start with inquiry-only duties:
 
 MIT — see [LICENSE](LICENSE).
 
+## Questions or Need Help?
+
+If you run into issues, have questions, or want to discuss agentic AI on Oracle Fusion, reach out:
+
+- **LinkedIn:** [Mayank Kumar](https://www.linkedin.com/in/mayankkumar8199/)
+- **GitHub Issues:** [Open an issue](https://github.com/mayankkumar8199/oracle-fusion-claude-starter/issues)
+
+Happy to help you get connected.
+
 ## Disclaimer
 
 This project is not affiliated with or endorsed by Oracle Corporation. Oracle Fusion Cloud is a trademark of Oracle. Use this tool in accordance with your Oracle license agreement and your organization's security policies. The authors are not responsible for any unauthorized access or data exposure resulting from misconfiguration.
