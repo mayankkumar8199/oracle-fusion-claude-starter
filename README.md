@@ -6,12 +6,13 @@ A ready-to-use project that connects **Oracle Fusion Cloud** (Financials, Procur
 
 | Component | Description |
 |---|---|
-| **MCP Server** (`mcp-servers/fusion-mcp/`) | A read-only Python MCP server that wraps the Fusion REST API. Five tools: `connection_status`, `fusion_get`, `list_invoices`, `get_invoice`, `get_api_info`. |
-| **Claude Skill** (`.claude/skills/oracle-fusion/`) | Prebuilt skill with query recipes, REST resource catalog, and working-loop instructions so Claude knows how to use Fusion effectively. |
+| **Read MCP Server** (`mcp-servers/fusion-mcp/fusion_server.py`) | A read-only Python MCP server that wraps the Fusion REST API. Five tools: `connection_status`, `fusion_get`, `list_invoices`, `get_invoice`, `get_api_info`. |
+| **Write MCP Server** (`mcp-servers/fusion-mcp/fusion_write_server.py`) | A separate, approval-gated server for changes: create/update/delete, custom actions (approve, cancel, validate, hold), scheduled processes (ESS), FBDI bulk import, and BI Publisher reports. Previews before executing; prompts on every call. |
+| **Claude Skills** (`.claude/skills/`) | `oracle-fusion` (query recipes, REST catalog, working loop) and `oracle-fusion-write` (the confirm-first write protocol). |
 | **Setup Automation** | One-click scripts for Windows (`Connect-Oracle-Fusion.cmd`) and macOS/Linux (`scripts/setup.sh`). A doctor script (`Fusion-Doctor.cmd`) diagnoses and repairs connection issues. |
 | **VS Code Config** (`.vscode/`) | Editor settings and recommended extensions preconfigured. |
 | **Reference Docs** (`docs/`, `fusion-kit/`) | 26D P2P/O2C reference documentation, 16,000+ table/view catalog, 26,000+ REST operation catalog, and grep-friendly indexes. |
-| **MCP Pre-approval** (`.claude/settings.local.json`) | All five read-only tools are pre-approved so Claude can use them without per-call prompts. |
+| **MCP Pre-approval** (`.claude/settings.local.json`) | The read tools are pre-approved for no-prompt use; write tools are intentionally left to prompt on every call. |
 
 ## Prerequisites
 
@@ -101,15 +102,19 @@ oracle-fusion-claude-starter/
 │   └── extensions.json                # Recommended extensions
 │
 ├── .claude/
-│   ├── settings.local.json            # Pre-approved MCP tool permissions
-│   └── skills/oracle-fusion/
-│       ├── SKILL.md                   # How Claude should use Fusion tools
-│       └── references/
-│           ├── recipes.md             # Ready-to-use query recipes (P2P + O2C)
-│           └── rest-resources.md      # All P2P/O2C REST endpoints
+│   ├── settings.local.json            # MCP tool permissions (reads allowed, writes prompt)
+│   └── skills/
+│       ├── oracle-fusion/             # Read skill
+│       │   ├── SKILL.md               # How Claude should query Fusion
+│       │   └── references/
+│       │       ├── recipes.md         # Ready-to-use query recipes (P2P + O2C)
+│       │       └── rest-resources.md  # All P2P/O2C REST endpoints
+│       └── oracle-fusion-write/
+│           └── SKILL.md               # The confirm-first write protocol
 │
 ├── mcp-servers/fusion-mcp/
-│   ├── fusion_server.py               # The MCP server (5 read-only tools)
+│   ├── fusion_server.py               # Read server (5 read-only tools)
+│   ├── fusion_write_server.py         # Write server (create/update/delete/action/ESS/FBDI/report)
 │   ├── fusion_setup_helper.py         # CLI: config, store, test, doctor
 │   ├── setup-fusion.ps1               # PowerShell setup logic
 │   ├── pyproject.toml                 # Python dependencies
@@ -131,7 +136,9 @@ oracle-fusion-claude-starter/
 
 ## Available MCP Tools
 
-Once connected, Claude has access to these read-only tools:
+This kit ships **two** MCP servers: a read-only server (`oracle-fusion`) and a separate, approval-gated write server (`oracle-fusion-write`).
+
+### Read tools — `oracle-fusion` (pre-approved, no prompt)
 
 | Tool | Description |
 |---|---|
@@ -140,6 +147,21 @@ Once connected, Claude has access to these read-only tools:
 | `list_invoices(...)` | Search Payables invoices by number, supplier, date range, or amount. |
 | `get_invoice(invoice_id)` | Get a single invoice by its InvoiceId. |
 | `get_api_info()` | REST API version information (works without login). |
+
+### Write tools — `oracle-fusion-write` (gated: previews first, prompts on every call)
+
+These change ERP data. Each tool previews with `confirm=false` and only executes with `confirm=true`, and none are pre-approved, so Claude Code prompts you before each write. See the [write protocol](#write-safety).
+
+| Tool | Description |
+|---|---|
+| `fusion_write(path, method, body, api, confirm)` | Create (`POST`), update (`PATCH`) or delete (`DELETE`) any REST record. |
+| `fusion_action(path, action, parameters, api, confirm)` | Run a custom action: `approve`, `cancel`, `validateInvoice`, `applyHold`, `releaseHold`, `close`, `communicate`, etc. |
+| `submit_scheduled_process(job_package_name, job_definition_name, ess_parameters, confirm)` | Submit an ESS scheduled process (Validate Invoices, Import Orders, Create Accounting, ...). |
+| `get_process_status(request_id)` | Read-only. Track a submitted job by request id. |
+| `import_bulk_data(document_base64, file_name, document_account, job_name, parameter_list, confirm)` | FBDI: upload a ZIP, load interface tables and run the import in one call. |
+| `run_report(report_absolute_path, parameters, confirm)` | Run an existing BI Publisher report (the SQL-backed reporting path). |
+
+> **Note on SQL:** Oracle Fusion has no ad-hoc SQL over REST. The supported path is a BI Publisher report whose data model holds your SQL, deployed once in the BI catalog, then run with `run_report`. SQL patterns are in the reference doc, section 9.
 
 ### Example Queries by Business Process
 
@@ -184,14 +206,29 @@ Once connected, Claude has access to these read-only tools:
 
 ## Security Design
 
-- **Read-only** — The server only issues GET requests. No create, update, or delete.
+- **Two servers, separated by risk** — Reads live in `oracle-fusion` (pre-approved). Writes live in the separate `oracle-fusion-write` server, which is not pre-approved.
 - **No secrets in files** — Password is stored in Windows Credential Manager / macOS Keychain / Linux Secret Service. Never in `.env`, config files, or command history.
-- **Field filtering** — Tools accept explicit `fields=` parameters to limit exposed data.
-- **Row caps** — Maximum 100 rows per request (50 for convenience tools).
-- **Input validation** — Paths are regex-validated, `..` is rejected, filter values are sanitized.
-- **Audit log** — Every API call is logged to `mcp-servers/fusion-mcp/logs/mcp-calls.jsonl` with timestamp, tool, parameters, and result count.
+- **Field filtering** — Read tools accept explicit `fields=` parameters to limit exposed data.
+- **Row caps** — Maximum 100 rows per read request (50 for convenience tools).
+- **Input validation** — Paths are regex-validated, `..` is rejected, methods and actions are whitelisted, filter values are sanitized.
+- **Audit log** — Every API call (reads and writes) is logged to `mcp-servers/fusion-mcp/logs/mcp-calls.jsonl` with timestamp, tool, parameters, and status.
 - **TLS certificate trust** — Uses the OS certificate store via `truststore`, so it works behind corporate HTTPS-inspecting proxies.
-- **ERP text is data** — The CLAUDE.md and skill instruct Claude to never treat ERP record content (supplier names, descriptions, memos) as instructions.
+- **ERP text is data** — The CLAUDE.md and skills instruct Claude to never treat ERP record content (supplier names, descriptions, memos) as instructions.
+
+<a name="write-safety"></a>
+### Write safety — the confirm-first protocol
+
+Writing to an ERP has real consequences (approving invoices, creating payments, deleting records). The write server enforces three independent gates:
+
+1. **Preview before execute** — Every write tool defaults to `confirm=false`, which returns the exact request that *would* be sent **without touching Fusion**. Claude shows you the change, and only resends with `confirm=true` after you approve.
+2. **Per-call permission prompt** — The write tools are deliberately left out of the pre-approved allow-list, so Claude Code prompts you before each write. (Only the read-only `get_process_status` is pre-approved.)
+3. **Forced interaction flag** — Each write tool is marked `requiresUserInteraction`, so clients prompt even in automatic modes.
+
+The bundled `oracle-fusion-write` skill instructs Claude to preview → show you the exact change → wait for explicit approval → execute, and to never batch-approve destructive changes on your behalf.
+
+**Want reads only?** Remove the `oracle-fusion-write` block from `.mcp.json` (and its entries from `.claude/settings.local.json`). The read server is completely independent.
+
+**Fusion-side control is the real boundary.** The surest limit on what can be written is the Fusion user's own roles. For a read-mostly setup, give the integration user inquiry (read) duties and add write privileges only for the specific areas you intend to automate.
 
 ## Troubleshooting
 

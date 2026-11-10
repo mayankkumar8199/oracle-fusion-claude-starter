@@ -18,9 +18,15 @@ CONFIG = os.environ.get("FUSION_CONFIG", os.path.join(HERE, "fusion_config.json"
 SERVICE = "oracle-fusion"
 VENV_PY = os.path.join(HERE, ".venv", "Scripts", "python.exe")
 SERVER = os.path.join(HERE, "fusion_server.py")
+WRITE_SERVER = os.path.join(HERE, "fusion_write_server.py")
 MCP_JSON = os.path.join(PROJECT, ".mcp.json")
 SETTINGS_LOCAL = os.path.join(PROJECT, ".claude", "settings.local.json")
 READ_TOOLS = ["connection_status", "get_api_info", "list_invoices", "get_invoice", "fusion_get"]
+WRITE_TOOLS = ["fusion_write", "fusion_action", "submit_scheduled_process", "get_process_status",
+               "import_bulk_data", "run_report"]
+# Only the read-only status check is pre-approved. The actual write tools are intentionally left OUT of
+# the allow-list so Claude Code prompts the user before every create/update/delete/action/import.
+WRITE_ALLOW = ["mcp__oracle-fusion-write__get_process_status"]
 CONNECT_CMD = os.path.join(PROJECT, "Connect-Oracle-Fusion.cmd")
 
 
@@ -89,6 +95,10 @@ def wanted_mcp_entry():
     return {"type": "stdio", "command": VENV_PY, "args": [SERVER], "env": {}}
 
 
+def wanted_write_entry():
+    return {"type": "stdio", "command": VENV_PY, "args": [WRITE_SERVER], "env": {}}
+
+
 def read_json(path):
     if not os.path.exists(path):
         return {}
@@ -105,9 +115,9 @@ def write_json(path, obj):
     os.replace(tmp, path)
 
 
-def handshake():
-    """Start the server exactly as Claude Code will and list its tools."""
-    p = subprocess.Popen([VENV_PY, SERVER], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+def handshake(server=SERVER):
+    """Start a server exactly as Claude Code will and list its tools."""
+    p = subprocess.Popen([VENV_PY, server], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                          text=True, encoding="utf-8")
     try:
         def send(m):
@@ -170,41 +180,53 @@ def cmd_doctor(fix):
             report("OK", "password saved in OS credential store")
         else:
             report("FAIL", "no saved password", f"run the setup script ({CONNECT_CMD})")
-    # 4 project MCP registration
+    # 4 project MCP registration (both the read server and the write server)
     mj = read_json(MCP_JSON)
-    entry = mj.get("mcpServers", {}).get("oracle-fusion")
-    if entry == wanted_mcp_entry():
-        report("OK", "registered in .mcp.json", MCP_JSON)
+    want_servers = {"oracle-fusion": wanted_mcp_entry(), "oracle-fusion-write": wanted_write_entry()}
+    outdated = [n for n, e in want_servers.items() if mj.get("mcpServers", {}).get(n) != e]
+    if not outdated:
+        report("OK", "both servers registered in .mcp.json", MCP_JSON)
     elif fix:
-        mj.setdefault("mcpServers", {})["oracle-fusion"] = wanted_mcp_entry()
+        servers = mj.setdefault("mcpServers", {})
+        for n, e in want_servers.items():
+            servers[n] = e
         write_json(MCP_JSON, mj)
-        report("FIXED", "registered oracle-fusion in .mcp.json", MCP_JSON)
+        report("FIXED", "registered oracle-fusion and oracle-fusion-write in .mcp.json", MCP_JSON)
     else:
-        report("FAIL", "oracle-fusion missing or outdated in .mcp.json", "run with --fix")
-    # 5 approval + read-only tool permissions (project-local settings)
+        report("FAIL", f"missing or outdated in .mcp.json: {outdated}", "run with --fix")
+    # 5 approval + tool permissions (project-local settings)
+    #   Both servers are enabled. Read tools and the read-only status check are pre-approved.
+    #   The write tools are deliberately NOT allowed here, so Claude Code prompts before each write.
     st = read_json(SETTINGS_LOCAL)
     enabled = st.get("enabledMcpjsonServers", [])
     allow = st.get("permissions", {}).get("allow", [])
-    want_allow = [f"mcp__oracle-fusion__{t}" for t in READ_TOOLS]
-    if "oracle-fusion" in enabled and all(a in allow for a in want_allow):
-        report("OK", "server approved and read-only tools allowed", SETTINGS_LOCAL)
+    want_enabled = ["oracle-fusion", "oracle-fusion-write"]
+    want_allow = [f"mcp__oracle-fusion__{t}" for t in READ_TOOLS] + WRITE_ALLOW
+    if all(s in enabled for s in want_enabled) and all(a in allow for a in want_allow):
+        report("OK", "both servers approved; reads allowed, writes left to prompt", SETTINGS_LOCAL)
     elif fix:
-        if "oracle-fusion" not in enabled:
-            st["enabledMcpjsonServers"] = enabled + ["oracle-fusion"]
+        st["enabledMcpjsonServers"] = enabled + [s for s in want_enabled if s not in enabled]
         perms = st.setdefault("permissions", {})
         perms["allow"] = allow + [a for a in want_allow if a not in allow]
         write_json(SETTINGS_LOCAL, st)
-        report("FIXED", "approved oracle-fusion and allowed its read-only tools", SETTINGS_LOCAL)
+        report("FIXED", "approved both servers; reads allowed, writes still prompt", SETTINGS_LOCAL)
     else:
-        report("FAIL", "server not pre-approved in .claude/settings.local.json", "run with --fix")
-    # 6 server starts like Claude Code starts it
+        report("FAIL", "servers not pre-approved in .claude/settings.local.json", "run with --fix")
+    # 6 both servers start like Claude Code starts them
     try:
-        tools, secs = handshake()
+        tools, secs = handshake(SERVER)
         missing = [t for t in READ_TOOLS if t not in tools]
-        report("OK" if not missing else "FAIL", "server starts and answers MCP",
+        report("OK" if not missing else "FAIL", "read server starts and answers MCP",
                f"{len(tools)} tools in {secs:.1f}s" + (f"; missing {missing}" if missing else ""))
     except Exception as e:
-        report("FAIL", "server did not start", str(e)[:300])
+        report("FAIL", "read server did not start", str(e)[:300])
+    try:
+        wtools, wsecs = handshake(WRITE_SERVER)
+        wmissing = [t for t in WRITE_TOOLS if t not in wtools]
+        report("OK" if not wmissing else "FAIL", "write server starts and answers MCP",
+               f"{len(wtools)} tools in {wsecs:.1f}s" + (f"; missing {wmissing}" if wmissing else ""))
+    except Exception as e:
+        report("FAIL", "write server did not start", str(e)[:300])
     # 7 live login
     if c:
         code, msg = login_test()
