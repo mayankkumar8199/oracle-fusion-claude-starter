@@ -1,9 +1,13 @@
-"""Setup and health tool for the oracle-fusion MCP server.
+"""Setup and health tool for the oracle-fusion MCP servers (read, write and AI Agent Studio).
 
   python fusion_setup_helper.py config <pod_url> <user>   write fusion_config.json (no secrets)
   python fusion_setup_helper.py store                     ask for the password (hidden) and save it in the OS credential store
   python fusion_setup_helper.py test                      one 1-row read to check the login (prints the HTTP status only)
   python fusion_setup_helper.py doctor [--fix]            check every link in the chain; --fix repairs what it can
+
+  Optional - only to invoke Oracle AI Agent Studio agents (needs an OAuth2 app in Fusion IAM):
+  python fusion_setup_helper.py agent-config <idcs_url> <client_id> <scope> [agent_base]
+  python fusion_setup_helper.py agent-store               ask for the OAuth client secret (hidden) and save it
 """
 import getpass
 import json
@@ -16,17 +20,22 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT = os.path.dirname(os.path.dirname(HERE))            # repo root (two levels up)
 CONFIG = os.environ.get("FUSION_CONFIG", os.path.join(HERE, "fusion_config.json"))
 SERVICE = "oracle-fusion"
+AGENT_SERVICE = "oracle-fusion-agent"
 VENV_PY = os.path.join(HERE, ".venv", "Scripts", "python.exe")
 SERVER = os.path.join(HERE, "fusion_server.py")
 WRITE_SERVER = os.path.join(HERE, "fusion_write_server.py")
+AGENT_SERVER = os.path.join(HERE, "fusion_agent_server.py")
 MCP_JSON = os.path.join(PROJECT, ".mcp.json")
 SETTINGS_LOCAL = os.path.join(PROJECT, ".claude", "settings.local.json")
 READ_TOOLS = ["connection_status", "get_api_info", "list_invoices", "get_invoice", "fusion_get"]
 WRITE_TOOLS = ["fusion_write", "fusion_action", "submit_scheduled_process", "get_process_status",
                "import_bulk_data", "run_report"]
-# Only the read-only status check is pre-approved. The actual write tools are intentionally left OUT of
-# the allow-list so Claude Code prompts the user before every create/update/delete/action/import.
+AGENT_TOOLS = ["agent_studio_status", "get_agent_card", "search_agents", "invoke_agent", "get_agent_result"]
+# Read-only tools are pre-approved. The tools that change data or run an agent (fusion_write family,
+# invoke_agent) are intentionally left OUT of the allow-list so Claude Code prompts before each one.
 WRITE_ALLOW = ["mcp__oracle-fusion-write__get_process_status"]
+AGENT_ALLOW = [f"mcp__oracle-fusion-agent__{t}"
+               for t in ("agent_studio_status", "get_agent_card", "search_agents", "get_agent_result")]
 CONNECT_CMD = os.path.join(PROJECT, "Connect-Oracle-Fusion.cmd")
 
 
@@ -60,6 +69,35 @@ def cmd_store():
     keyring.set_password(SERVICE, c["user"], pw)
     backend = type(keyring.get_keyring()).__name__
     print(f"      Password saved in OS credential store ({backend}, entry 'oracle-fusion').")
+    return 0
+
+
+def cmd_agent_config(idcs_url, client_id, scope, agent_base=""):
+    cfg = load() if os.path.exists(CONFIG) else {}
+    cfg["idcs_url"] = idcs_url.rstrip("/")
+    cfg["agent_client_id"] = client_id
+    cfg["agent_scope"] = scope
+    if agent_base:
+        cfg["agent_base"] = agent_base.rstrip("/")
+    with open(CONFIG, "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=2)
+    print(f"      Saved AI Agent Studio OAuth settings (no secret) to {CONFIG}")
+    return 0
+
+
+def cmd_agent_store():
+    import keyring
+    cfg = load()
+    client_id = cfg.get("agent_client_id")
+    if not client_id:
+        print("      Run 'agent-config' first (no agent_client_id in the settings).")
+        return 1
+    secret = getpass.getpass(f"      OAuth client secret for {client_id} (typing is hidden): ")
+    if not secret:
+        print("      No secret entered - nothing saved.")
+        return 1
+    keyring.set_password(AGENT_SERVICE, client_id, secret)
+    print(f"      Client secret saved in OS credential store (entry '{AGENT_SERVICE}').")
     return 0
 
 
@@ -97,6 +135,10 @@ def wanted_mcp_entry():
 
 def wanted_write_entry():
     return {"type": "stdio", "command": VENV_PY, "args": [WRITE_SERVER], "env": {}}
+
+
+def wanted_agent_entry():
+    return {"type": "stdio", "command": VENV_PY, "args": [AGENT_SERVER], "env": {}}
 
 
 def read_json(path):
@@ -180,36 +222,37 @@ def cmd_doctor(fix):
             report("OK", "password saved in OS credential store")
         else:
             report("FAIL", "no saved password", f"run the setup script ({CONNECT_CMD})")
-    # 4 project MCP registration (both the read server and the write server)
+    # 4 project MCP registration (read, write and agent servers)
     mj = read_json(MCP_JSON)
-    want_servers = {"oracle-fusion": wanted_mcp_entry(), "oracle-fusion-write": wanted_write_entry()}
+    want_servers = {"oracle-fusion": wanted_mcp_entry(), "oracle-fusion-write": wanted_write_entry(),
+                    "oracle-fusion-agent": wanted_agent_entry()}
     outdated = [n for n, e in want_servers.items() if mj.get("mcpServers", {}).get(n) != e]
     if not outdated:
-        report("OK", "both servers registered in .mcp.json", MCP_JSON)
+        report("OK", "all three servers registered in .mcp.json", MCP_JSON)
     elif fix:
         servers = mj.setdefault("mcpServers", {})
         for n, e in want_servers.items():
             servers[n] = e
         write_json(MCP_JSON, mj)
-        report("FIXED", "registered oracle-fusion and oracle-fusion-write in .mcp.json", MCP_JSON)
+        report("FIXED", "registered read, write and agent servers in .mcp.json", MCP_JSON)
     else:
         report("FAIL", f"missing or outdated in .mcp.json: {outdated}", "run with --fix")
     # 5 approval + tool permissions (project-local settings)
-    #   Both servers are enabled. Read tools and the read-only status check are pre-approved.
-    #   The write tools are deliberately NOT allowed here, so Claude Code prompts before each write.
+    #   All three servers are enabled. Read/discovery tools are pre-approved. The tools that change data
+    #   or run an agent (fusion_write family, invoke_agent) are NOT allowed here, so Claude Code prompts.
     st = read_json(SETTINGS_LOCAL)
     enabled = st.get("enabledMcpjsonServers", [])
     allow = st.get("permissions", {}).get("allow", [])
-    want_enabled = ["oracle-fusion", "oracle-fusion-write"]
-    want_allow = [f"mcp__oracle-fusion__{t}" for t in READ_TOOLS] + WRITE_ALLOW
+    want_enabled = ["oracle-fusion", "oracle-fusion-write", "oracle-fusion-agent"]
+    want_allow = [f"mcp__oracle-fusion__{t}" for t in READ_TOOLS] + WRITE_ALLOW + AGENT_ALLOW
     if all(s in enabled for s in want_enabled) and all(a in allow for a in want_allow):
-        report("OK", "both servers approved; reads allowed, writes left to prompt", SETTINGS_LOCAL)
+        report("OK", "all servers approved; reads allowed, writes/invoke left to prompt", SETTINGS_LOCAL)
     elif fix:
         st["enabledMcpjsonServers"] = enabled + [s for s in want_enabled if s not in enabled]
         perms = st.setdefault("permissions", {})
         perms["allow"] = allow + [a for a in want_allow if a not in allow]
         write_json(SETTINGS_LOCAL, st)
-        report("FIXED", "approved both servers; reads allowed, writes still prompt", SETTINGS_LOCAL)
+        report("FIXED", "approved all servers; reads allowed, writes/invoke still prompt", SETTINGS_LOCAL)
     else:
         report("FAIL", "servers not pre-approved in .claude/settings.local.json", "run with --fix")
     # 6 both servers start like Claude Code starts them
@@ -227,6 +270,13 @@ def cmd_doctor(fix):
                f"{len(wtools)} tools in {wsecs:.1f}s" + (f"; missing {wmissing}" if wmissing else ""))
     except Exception as e:
         report("FAIL", "write server did not start", str(e)[:300])
+    try:
+        atools, asecs = handshake(AGENT_SERVER)
+        amissing = [t for t in AGENT_TOOLS if t not in atools]
+        report("OK" if not amissing else "FAIL", "agent server starts and answers MCP",
+               f"{len(atools)} tools in {asecs:.1f}s" + (f"; missing {amissing}" if amissing else ""))
+    except Exception as e:
+        report("FAIL", "agent server did not start", str(e)[:300])
     # 7 live login
     if c:
         code, msg = login_test()
@@ -246,5 +296,9 @@ if __name__ == "__main__":
         sys.exit(cmd_test())
     if a[:1] == ["doctor"]:
         sys.exit(cmd_doctor("--fix" in a))
+    if a[:1] == ["agent-config"] and len(a) in (4, 5):
+        sys.exit(cmd_agent_config(a[1], a[2], a[3], a[4] if len(a) == 5 else ""))
+    if a[:1] == ["agent-store"]:
+        sys.exit(cmd_agent_store())
     print(__doc__)
     sys.exit(64)

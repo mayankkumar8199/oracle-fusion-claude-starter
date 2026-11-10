@@ -1,7 +1,8 @@
 {
   "enabledMcpjsonServers": [
     "oracle-fusion",
-    "oracle-fusion-write"
+    "oracle-fusion-write",
+    "oracle-fusion-agent"
   ],
   "permissions": {
     "allow": [
@@ -10,7 +11,11 @@
       "mcp__oracle-fusion__list_invoices",
       "mcp__oracle-fusion__get_invoice",
       "mcp__oracle-fusion__fusion_get",
-      "mcp__oracle-fusion-write__get_process_status"
+      "mcp__oracle-fusion-write__get_process_status",
+      "mcp__oracle-fusion-agent__agent_studio_status",
+      "mcp__oracle-fusion-agent__get_agent_card",
+      "mcp__oracle-fusion-agent__search_agents",
+      "mcp__oracle-fusion-agent__get_agent_result"
     ]
   }
 }

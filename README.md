@@ -8,7 +8,8 @@ A ready-to-use project that connects **Oracle Fusion Cloud** (Financials, Procur
 |---|---|
 | **Read MCP Server** (`mcp-servers/fusion-mcp/fusion_server.py`) | A read-only Python MCP server that wraps the Fusion REST API. Five tools: `connection_status`, `fusion_get`, `list_invoices`, `get_invoice`, `get_api_info`. |
 | **Write MCP Server** (`mcp-servers/fusion-mcp/fusion_write_server.py`) | A separate, approval-gated server for changes: create/update/delete, custom actions (approve, cancel, validate, hold), scheduled processes (ESS), FBDI bulk import, and BI Publisher reports. Previews before executing; prompts on every call. |
-| **Claude Skills** (`.claude/skills/`) | `oracle-fusion` (query recipes, REST catalog, working loop) and `oracle-fusion-write` (the confirm-first write protocol). |
+| **Agent Studio MCP Server** (`mcp-servers/fusion-mcp/fusion_agent_server.py`) | Discover and invoke published Oracle AI Agent Studio agents (Payables Agent, Payments Agent, Cash Processing, Collector Workspace, Sales/Sourcing Command Centers, and your custom agents) via the orchestrator endpoints. `invoke_agent` is gated like writes. |
+| **Claude Skills** (`.claude/skills/`) | `oracle-fusion` (query recipes, REST catalog), `oracle-fusion-write` (confirm-first write protocol), and `oracle-fusion-agent-studio` (discover/invoke/build Oracle AI agents). |
 | **Setup Automation** | One-click scripts for Windows (`Connect-Oracle-Fusion.cmd`) and macOS/Linux (`scripts/setup.sh`). A doctor script (`Fusion-Doctor.cmd`) diagnoses and repairs connection issues. |
 | **VS Code Config** (`.vscode/`) | Editor settings and recommended extensions preconfigured. |
 | **Reference Docs** (`docs/`, `fusion-kit/`) | 26D P2P/O2C reference documentation, 16,000+ table/view catalog, 26,000+ REST operation catalog, and grep-friendly indexes. |
@@ -109,13 +110,16 @@ oracle-fusion-claude-starter/
 │       │   └── references/
 │       │       ├── recipes.md         # Ready-to-use query recipes (P2P + O2C)
 │       │       └── rest-resources.md  # All P2P/O2C REST endpoints
-│       └── oracle-fusion-write/
-│           └── SKILL.md               # The confirm-first write protocol
+│       ├── oracle-fusion-write/
+│       │   └── SKILL.md               # The confirm-first write protocol
+│       └── oracle-fusion-agent-studio/
+│           └── SKILL.md               # Discover/invoke/build Oracle AI agents
 │
 ├── mcp-servers/fusion-mcp/
 │   ├── fusion_server.py               # Read server (5 read-only tools)
 │   ├── fusion_write_server.py         # Write server (create/update/delete/action/ESS/FBDI/report)
-│   ├── fusion_setup_helper.py         # CLI: config, store, test, doctor
+│   ├── fusion_agent_server.py         # Agent Studio server (discover/invoke published AI agents)
+│   ├── fusion_setup_helper.py         # CLI: config, store, test, doctor, agent-config, agent-store
 │   ├── setup-fusion.ps1               # PowerShell setup logic
 │   ├── pyproject.toml                 # Python dependencies
 │   ├── uv.lock                        # Locked dependency versions
@@ -162,6 +166,20 @@ These change ERP data. Each tool previews with `confirm=false` and only executes
 | `run_report(report_absolute_path, parameters, confirm)` | Run an existing BI Publisher report (the SQL-backed reporting path). |
 
 > **Note on SQL:** Oracle Fusion has no ad-hoc SQL over REST. The supported path is a BI Publisher report whose data model holds your SQL, deployed once in the BI catalog, then run with `run_report`. SQL patterns are in the reference doc, section 9.
+
+### AI Agent Studio tools — `oracle-fusion-agent` (discover is open; invoke prompts)
+
+Discover and run **published Oracle AI agents** (Payables Agent, Payments Agent, Cash Processing, Collector Workspace, Sales/Sourcing Command Centers, and your own). See the `oracle-fusion-agent-studio` skill.
+
+| Tool | Description |
+|---|---|
+| `agent_studio_status()` | Check whether Agent Studio access is configured (and get an OAuth token). |
+| `search_agents(query)` | Discover published agents your token can see (A2A registry). |
+| `get_agent_card(workflow_code)` | Fetch an agent's capabilities (A2A Agent Card). |
+| `invoke_agent(workflow_code, message, confirm)` | Run an agent asynchronously; returns a job id. Gated (preview → confirm → prompt). |
+| `get_agent_result(workflow_code, job_id)` | Poll a running agent job for its result. |
+
+> **One-time OAuth setup:** Agent Studio endpoints use an OAuth2 bearer token from OCI IAM (not the Fusion password). After an admin creates a confidential app with access to the AI Agent Studio service, run `fusion_setup_helper.py agent-config <idcs_url> <client_id> <scope>` then `agent-store` (secret goes to the credential store). Until then, `agent_studio_status()` reports "not configured" and the read tools stay dormant. You can also **build** agents from VS Code with Oracle's AI Studio CLI — see the skill.
 
 ### Example Queries by Business Process
 
